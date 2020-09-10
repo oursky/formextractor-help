@@ -30,7 +30,7 @@ In short, the user _tells_ FormX about the format of incoming documents, so that
 
 **Tutorial:** [Set up a form with master image](get-started/set-up-a-form-with-master-image.md)
 
-### Data extraction from different types of documents where the targets are supported by FormX
+### Data extraction from all kinds of documents with Auto Extraction Items
 
 Unlike the other scenario, no _master image_ is needed. FormX offers a list of [Auto Extraction Items](features/auto-extraction-items.md), which are a bunch of targets that can be pulled off different types of documents.
 
