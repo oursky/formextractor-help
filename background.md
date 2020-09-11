@@ -1,3 +1,9 @@
+---
+description: >-
+  Covers basic concepts of FormX. Practical tips will be provided at later
+  sections.
+---
+
 # Background
 
 ## What is FormX?
@@ -14,11 +20,17 @@ So what's so special about FormX? Pulling data off documents is solved long ago 
 
 ## How can FormX be used?
 
-There are two main scenarios FormX can solve. Both scenarios require some quick set up. For the time being, all set up tasks can only be carried out on our [portal](https://formextractor.oursky.com/form). Meanwhile, extractions can be done on the portal, via APIs or our desktop apps.
+There are two main scenarios FormX can solve. Both scenarios require some quick set up. For the time being, _Form_ creation and all set up tasks can only be carried out on our [portal](https://formextractor.oursky.com/form). Meanwhile, extractions can be done on the portal, our desktop apps or via APIs, where you can submit photo copies of documents and receive results.
 
-Each scenario has a get started tutorial where details are further discussed there.
+Before we dive in to the scenarios, it's crucial to understand what's a _Form_ in FormX.
 
-### Data extraction from a set of documents with the same format
+### What is a _Form_?
+
+A _Form_ represents a format of document. By creating and configuring a _Form_, a user passes a set of instructions about a specific form format to FormX, which will be used to extract information from forms with such format.
+
+Guides on using the portal and setting up a _Form_ are covered in later tutorials, for now you only have to understand the concepts.
+
+### 1 - Data extraction from a set of documents with the same format
 
 The user will first need to create a _form_, upload a _master image_ then set it up by specifying extraction requirements and labelling target areas. FormX will then learn \(i.e. compute features\) from this _form_, and future data extractions will be executed based on these learnings. 
 
@@ -28,9 +40,7 @@ In short, the user _tells_ FormX about the format of incoming documents, so that
 
 **Examples:** insurance forms, bank statements, licences, certificates issued by government bodies etc.
 
-**Tutorial:** [Set up a form with master image](get-started/set-up-a-form-with-master-image.md)
-
-### Data extraction from all kinds of documents with Auto Extraction Items
+### 2 - Data extraction from all kinds of documents with Auto Extraction Items
 
 Unlike the other scenario, no _master image_ is needed. FormX offers a list of [Auto Extraction Items](features/auto-extraction-items.md), which are a bunch of targets that can be pulled off different types of documents.
 
@@ -42,9 +52,36 @@ Say you want to get the date from a pile of receipts, tick the date box under th
 
 **Examples:** receipts, tickets \(e.g. flight, train, movie\), bank statements if only available targets needed
 
-**Tutorial:** [Set up a form without master image](get-started/set-up-a-form-without-master-image.md)
+### Explaining with examples
 
+To aid grasping these ideas, let's go through a few examples. Say you have 3 types of documents and they extraction targets are:
 
+1. A pile of **driving licences** with same format - **name, address, age**
+2. A pile of **business registration** documents, same format - **company name, issue date, address**
+3. A stack of **receipts** from different shops - **date, time, price**
 
+whose data is needed on your system and you aim to automate the extraction process with FormX. In this case, you will need creating three forms on FormX's portal. 
 
+Since 1 and 2 both have a format to follow, they lie in the first scenario. As a result, they share the same set up flow:
+
+* First pick a member out of the pile with a clear resolution
+* Create a _Form_ and upload that member as the master image
+* Set up the _Form_ with tools on our portal, e.g. labelling areas, specifying target data
+* Save!
+
+Documents of type 3 are issued by a range of shops so they don't share a format. Therefore the set up flow is bit different:
+
+* Create a _Form_ with no master image
+* Specify Auto Extraction Items
+* Save!
+
+That's all and now the three forms are ready for their own document data extraction.
+
+### Tutorial time!
+
+Each scenario has its own get started tutorial. After finishing them you will become familiar with how FormX's use cases!
+
+**Scenario 1 Tutorial:** [Set up a form with master image](get-started/set-up-a-form-with-master-image.md)
+
+**Scenario 2 Tutorial:** [Set up a form without master image](get-started/set-up-a-form-without-master-image.md)
 
