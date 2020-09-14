@@ -22,8 +22,6 @@ So what's so special about FormX? Pulling data off documents is solved long ago 
 
 There are two main scenarios FormX can solve. Both scenarios require some quick set up. For the time being, _Form_ creation and all set up tasks can only be carried out on our [portal](https://formextractor.oursky.com/form). Meanwhile, extractions can be done on the portal, our desktop apps or via APIs, where you can submit photo copies of documents and receive results.
 
-In short, these three platforms
-
 To quickly sum up the roles of these three platforms:
 
 * Portal - its functionality includes form set up, management on payment and access token, download desktop app and test out sample images one by one.
