@@ -4,7 +4,7 @@ description: >-
   sections.
 ---
 
-# Background
+# Basics
 
 ## What is FormX?
 

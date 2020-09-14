@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Background](background.md)
+* [Basics](background.md)
 * [Portal Walkthrough](portal-walkthrough.md)
 * [Desktop App Walkthrough](desktop-app-walkthrough.md)
 
