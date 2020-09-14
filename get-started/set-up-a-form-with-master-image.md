@@ -88,7 +88,7 @@ Choose the third tool as shown in the below screenshot:
 
 I have magnified the screen in the following GIF to show the fields clearly. In this step we will add three _Detection Regions_, each contains a field called - name, job title and email respectively.
 
-\[TODO - replace video\]
+![](../.gitbook/assets/replace.gif)
 
 Be sure the click the "Save" button. We have now finished setting up this form!
 
@@ -98,13 +98,15 @@ There are two more name cards in the zip file you have downloaded right at the s
 
 Navigate to the "Test" tab and choose `sample1.JPG`. This will trigger an extraction which will complete in no time. Repeat these steps with `sample2.JPG` and you will get very similar results.
 
+![](../.gitbook/assets/ezgif-1-4979681fccb4%20%281%29.gif)
+
 In both our tries, we can see the input images are warped and "aligned" to the master form. The extraction results are listed out with each's corresponding fragment of image, and all enclosed in a JSON at the very bottom.
 
 Both images were casually taken with a mobile phone. You may have already noticed that the first one has a more titled angle while the other has higher background noise. Images submitted to FormX will go through several image enhancing processes before they are submitted to OCR services and later fed to AI models, therefore phone taken images are perfectly fine. And with references provided from the _Anchors,_ images are warped before our AI models start pulling information.
 
 ![Comparison between unprocessed image and warped image](../.gitbook/assets/screenshot-2020-09-11-at-4.37.28-pm.png)
 
-## Integrating with any app
+## Integrate with any app
 
 Via calling our APIs, extraction results can be obtained at any app. Navigate to the "API" tab, then copy both the form ID and your access token by clicking the buttons on the top right corner. 
 
