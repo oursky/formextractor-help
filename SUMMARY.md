@@ -2,8 +2,6 @@
 
 * [Home](README.md)
 * [Basics](background.md)
-* [Portal Walkthrough](portal-walkthrough.md)
-* [Desktop App Walkthrough](desktop-app-walkthrough.md)
 
 ## Get started
 
