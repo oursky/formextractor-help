@@ -118,7 +118,3 @@ If you'd like to learn more about the APIs, we do have a complete doc down the "
 
 Props to you, you have now successfully extract information from a set of documents that share the same format! One more [tutorial](set-up-a-form-without-master-image.md) to go!
 
-
-
-
-

@@ -93,3 +93,5 @@ The JSON output indicates the tokens are matched as well:
 }
 ```
 
+The matched tokens are returned in their own token group, labelled and structured.
+

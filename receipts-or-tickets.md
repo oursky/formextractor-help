@@ -21,5 +21,5 @@ Various shopping malls wished to establish a loyalty program with receipts where
 
 ### Bank statements
 
-Address proof is often required in plenty of application process, and FormX processes the ability to recognize address from bank statements. 
+Address proof is often required in plenty of application process, and FormX processes the ability to recognize address from bank statements.
 

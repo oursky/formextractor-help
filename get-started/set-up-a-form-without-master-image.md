@@ -74,17 +74,3 @@ If you'd like to learn more about the APIs, we do have a complete doc down the "
 
 Assuming you have completed the master image [tutorial](set-up-a-form-with-master-image.md), you are well equipped and can start exploring FormX's wide range of features! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
