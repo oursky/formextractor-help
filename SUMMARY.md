@@ -12,7 +12,7 @@
 
 ---
 
-* [Official Documents or Certificates](official-documents-or-certificates.md)
+* [Official Forms or Certificates](official-documents-or-certificates.md)
 * [Receipts or tickets](receipts-or-tickets.md)
 
 ## Features
