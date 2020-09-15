@@ -43,7 +43,7 @@ Now, navigate to the "Test" tab and pull downloaded samples in one by one. You w
 
 ![](../.gitbook/assets/screenshot-2020-09-15-at-5.42.38-pm.png)
 
-The JSON output indicates the tokens are matched as well:
+The JSON output indicates the tokens are matched as well, where the tokens are **grouped** and **labelled**:
 
 ```text
 {
@@ -92,6 +92,4 @@ The JSON output indicates the tokens are matched as well:
   ]
 }
 ```
-
-The matched tokens are returned in their own token group, labelled and structured.
 
