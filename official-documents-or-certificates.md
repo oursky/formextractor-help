@@ -24,10 +24,6 @@ We worked with Google Cloud to provide data extraction models on documents issue
 
 FormX helped a local parking giant to extract data off vehicle licences in parking lots. After a quick set up by FormX's team, inspector can simply walk up to a car and scan for information from vehicle licences sticked on the windshield.
 
-### Receipts
-
-Various shopping malls wished to establish a loyalty program with receipts where date, time and total price are needed. By plugging FormX  into their pipeline, customers can simply have their receipts scanned and receive loyalty points once data is extracted and processed.
-
 ### Bank statements
 
 Address proof is often required in plenty of application process, and FormX processes the ability to recognize address from bank statements. 
