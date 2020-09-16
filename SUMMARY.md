@@ -23,7 +23,7 @@
 * [Key Value Pattern Detection](features/key-value-pattern-detection.md)
 * [Token Group](features/token-group.md)
 * [Auto Extraction Items](features/auto-extraction-items.md)
-* [Labeller](features/labeller/README.md)
+* [Labelling Areas](features/labeller/README.md)
   * [Anchor](features/labeller/anchor.md)
   * [Detection Region](features/labeller/detection-region.md)
 

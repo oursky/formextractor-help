@@ -44,7 +44,7 @@ First we will start with marking areas on the master form.
 
 #### Definition
 
-An _Anchor_ is a labelled area that serves as a positional reference point, allowing FormX to warp uploaded images of this form accordingly. Since uploaded images are more or less different \(e.g. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before  extracting.
+An _Anchor_ is a labelled area that serves as a positional reference point, allowing FormX to warp uploaded images of this form accordingly. Since uploaded images are more or less different \(e.g. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before extracting.
 
 **TL;DR:** Like an actual anchor, drop one on your master form to prevent future uploaded forms from moving away. 
 
