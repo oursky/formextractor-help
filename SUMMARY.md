@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [FormX Documentation and Guide](README.md)
 * [Basics](background.md)
 
 ## Get started
