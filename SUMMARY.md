@@ -14,6 +14,7 @@
 
 * [Official Forms or Certificates](official-documents-or-certificates.md)
 * [Receipts or tickets](receipts-or-tickets.md)
+* [Customization services](customization-services.md)
 
 ## Features
 
@@ -30,4 +31,8 @@
 
 * [Document Extraction](api-references/api-references-document-extraction.md)
 * [Post-Processing Scripts](api-references/api-references-for-post-processing-scripts.md)
+
+---
+
+* [Contact Us](contact-us.md)
 

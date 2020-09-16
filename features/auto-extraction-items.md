@@ -34,3 +34,5 @@ To configure the list of targets you are seeking, navigate to the "Setting" tab 
 
 Say you have date ticked, FormX will attempt to return the best candidate it can find in uploaded image.
 
+This [tutorial](../get-started/set-up-a-form-without-master-image.md) covers how Auto Extraction Items work when there's no master image.
+

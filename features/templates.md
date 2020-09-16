@@ -8,9 +8,11 @@ description: >-
 
 ## A quick guide
 
-Templates are [_Forms_](../background.md#what-is-a-form) __that we believe are sought after by many. Thus we have set them up beforehand allowing users to be able to use one straight away.
+Templates are [_Forms_](../background.md#what-is-a-form) __that are sought after by many. Thus we have set them up beforehand allowing users to use one straight away.
 
-They work just like an ordinary Form, only without the "Editor" tab. Test them out like the usual ones at the "Test" tab.
+They work just like an ordinary Form, only without the "Editor" tab. To test one out, navigate to the "Test" tab and upload an corresponding image.
+
+## List of templates
 
 Currently available forms are:
 
@@ -20,5 +22,5 @@ Currently available forms are:
 * Hong Kong ID \(New\)
 * Hong Kong ID \(Old\)
 
-Be sure to try them out!
+If you have any forms that should go into the category of templates, don't hesitate to let us know!
 

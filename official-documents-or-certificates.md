@@ -30,5 +30,5 @@ Integrated into an appointment management app, FormX extracted information off a
 
 ## Try them out!
 
-A majority of these mentioned documents are available on FormX's portal as templates. No set up is needed, you can just upload an image to try a template out.
+A majority of these mentioned documents are available on FormX's portal as [templates](features/templates.md). No set up is needed, you can just upload an image to try a template out.
 

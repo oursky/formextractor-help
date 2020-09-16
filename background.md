@@ -83,11 +83,15 @@ Documents of type 3 are issued by a range of shops so they don't share a format.
 
 That's all and now the three forms are ready for their own document data extraction.
 
-### Tutorial time!
+## Tutorial time!
 
 Each scenario has its own get started tutorial. After finishing them you will become familiar with how FormX's use cases!
 
 **Scenario 1 Tutorial:** [Set up a form with master image](get-started/set-up-a-form-with-master-image.md)
 
 **Scenario 2 Tutorial:** [Set up a form without master image](get-started/set-up-a-form-without-master-image.md)
+
+## Further readings
+
+Once you have finished the tutorials and would like to learn more about the implementation of FormX, this [article](https://blog.oursky.com/2020/04/06/formextractor-behind-the-scenes-how-artificial-intelligence-ai-is-used-to-extract-and-capture-data/) is for you!
 
