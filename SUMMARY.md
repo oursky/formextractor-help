@@ -13,7 +13,7 @@
 ---
 
 * [Official Forms or Certificates](official-documents-or-certificates.md)
-* [Receipts or tickets](receipts-or-tickets.md)
+* [Receipts or Tickets](receipts-or-tickets.md)
 * [Customization services](customization-services.md)
 
 ## Features
