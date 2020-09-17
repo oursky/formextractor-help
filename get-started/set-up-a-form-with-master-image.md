@@ -1,30 +1,30 @@
 ---
 description: >-
-  This step-by-step tutorial showcases how FormX can take care of the data
-  extraction process from documents sharing a format
+  This step-by-step tutorial will demonstrate how FormX can take care of the
+  data extraction process from documents that share a format
 ---
 
-# Set up a form with master image
+# Set up a form with a master image
 
 ## Prerequisites
 
 * An account on FormX [portal](https://formextractor.oursky.com/)
-* Have basic understanding on [background](../background.md) of FormX
-* Download [sample name cards](https://drive.google.com/drive/folders/1DUEMq6uoKQmFWw-gI9gMXrGyW3VLKIAt?usp=sharing) that will be used in this tutorial
+* An understanding on [background](../background.md) of FormX's basics
+* [Sample business/name cards](https://drive.google.com/drive/folders/1DUEMq6uoKQmFWw-gI9gMXrGyW3VLKIAt?usp=sharing) that will be used in this tutorial
 
-## Aims
+## Objective
 
-Obtain {name, job title, email} from given name cards.
+Obtain the following information from the business/name cards: {name}, {job title}, {email}.
 
-## Create a Form
+## Creating a Form
 
-Navigate to the form listing page of FormX and click the "Add New Form" button on top right corner.
+Navigate to the form listing page of FormX and click the "Add New Form" button on the top right corner.
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-3.58.36-pm.png)
 
 
 
-You will be promoted with a Create Form modal. Name this form "name card demo" and upload the `master_image.jpg` from the downloaded sample name cards. Then click "Create".
+You will be prompted with a Create Form modal. Name this form "name card demo" and upload the `master_image.jpg` from the downloaded sample name cards. Then click "Create".
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-4.02.40-pm.png)
 
@@ -32,35 +32,33 @@ A new form will be created. Click on the "name card demo" new form.
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-4.07.16-pm.png)
 
-You will be redirected to the form editor page.Now we can start setting up so that FormX can extract the sample name cards based on this form.
+You will be redirected to the form editor page.Now, you can start setting it up so that FormX can extract data on the sample name cards based on this form.
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-6.15.08-pm.png)
 
 ## Labelling the form
 
-First we will start with marking areas on the master form.
+First, we'll start with marking areas on the master form.
 
 ### Anchors
 
-#### Definition
-
-An _Anchor_ is a labelled area that serves as a positional reference point, allowing FormX to warp uploaded images of this form accordingly. Since uploaded images are more or less different \(e.g. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before extracting.
+An _Anchor_ is a labeled area that serves as a positional reference point, allowing FormX to warp uploaded images of this form. Since uploaded images are more or less different \(i.e. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before extracting.
 
 **TL;DR:** Like an actual anchor, drop one on your master form to prevent future uploaded forms from moving away. 
 
-You may be wondering - which parts in the master form should I include with an _Anchor_? Identify the common parts of your documents \(with the same format, of course\), then include them with an _Anchor_ then you are pretty much done.
+You may be wondering: Which parts in the master form should I include with an _Anchor_? Identify the common parts of your documents \(with the same format, of course\), then include them with an _Anchor_.
 
 #### Adding some to the name card master image
 
-We will mark four anchors - name, telephone number, HK and TW address. Name and TW address are especially important, as they are respectively the topmost and bottom most element in our name cards. Anchoring them does facilitate the warping process significantly.
+In the example, we'll mark four anchors — name, telephone number, Hong Kong \(HK\) and Taiwan \(TW\) address. Name and TW address are especially important, as they are respectively the topmost and bottom-most element in our name cards. Anchoring them significantly facilitates the warping process.
 
 ![](../.gitbook/assets/screenshot-2020-09-11-at-2.58.51-pm.png)
 
-Choose second tool as shown in the below image to mark an _Anchor_.
+Choose the second tool as shown in the image below to mark an _Anchor_.
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-7.32.18-pm%20%281%29.png)
 
-Then mark four points as shown in the below GIF. Note that to create an _Anchor_, the final point must connect with the first.
+Then mark four points as shown in the GIF below. Note that to create an _Anchor_, the final point must connect with the first.
 
 ![](../.gitbook/assets/1.gif)
 
@@ -68,53 +66,51 @@ Once the name and telephone number are marked, scroll down and include the two a
 
 ![](../.gitbook/assets/2.gif)
 
-The master form now has enough _Anchors_, which future uploaded name cards will have their corresponding parts checked against.
+The master form now has enough _Anchors_, which can then be used to check the corresponding parts of future uploaded name cards.
 
 ### Detection Regions
 
-#### Definition
-
-Its name should be self explanatory enough, these areas are marked when you need something extracted from them. One _Detection Region_ can have several extraction field, as one region can contain several items that are worth obtaining.
+_Detection Regions_ are the areas that are marked from which you need data extracted. One _Detection Region_ can have several extraction fields, as one region can contain several items of data that are worth obtaining or extracting.
 
 **TL;DR:** Mark the area where you want information extracted from on the master form with _Detection Region._
 
 #### Adding Detection Regions
 
-We will extract name, job title and email for these name cards. To do so, they will be marked with _Detection Regions_.
+In this example, we'll extract name, job title and email for these name cards. To do so, they will be marked via _Detection Regions_.
 
-Choose the third tool as shown in the below screenshot:
+Choose the third tool marked with a red box in the screenshot below:
 
 ![](../.gitbook/assets/screenshot-2020-09-11-at-2.58.51-pm%20%281%29.png)
 
-I have magnified the screen in the following GIF to show the fields clearly. In this step we will add three _Detection Regions_, each contains a field called - name, job title and email respectively.
+As shown below, we'll add three _Detection Regions,_ each containing a field called ‘name,’ ‘job title,’ and ‘email’.
 
 ![](../.gitbook/assets/replace.gif)
 
-Be sure the click the "Save" button. We have now finished setting up this form!
+Click the "Save" button. Now you've finished setting up this form!
 
-## Test out with other name cards
+## Test it out with other name cards
 
-There are two more name cards in the zip file you have downloaded right at the start of this tutorial. In this section they will be fed to our freshly created form to have the targets extracted.
+There are two more name cards in the ZIP file you've downloaded at the start of this tutorial. They will be fed to our freshly created form to have the data targets extracted.
 
-Navigate to the "Test" tab and choose `sample1.JPG`. This will trigger an extraction which will complete in no time. Repeat these steps with `sample2.JPG` and you will get very similar results.
+Navigate to the "Test" tab and choose `sample1.JPG`. This will trigger an extraction which will complete in no time. Repeat these steps with `sample2.JPG` and you will get similar results.
 
 ![](../.gitbook/assets/ezgif-1-4979681fccb4%20%281%29.gif)
 
-In both our tries, we can see the input images are warped and "aligned" to the master form. The extraction results are listed out with each's corresponding fragment of image, and all enclosed in a JSON at the very bottom.
+In both cases, you can see that the input images are warped and "aligned" to the master form. The extraction results are listed out with each image's corresponding fragment, and enclosed with a JSON value at the very bottom.
 
-Both images were casually taken with a mobile phone. You may have already noticed that the first one has a more titled angle while the other has higher background noise. Images submitted to FormX will go through several image enhancing processes before they are submitted to OCR services and later fed to AI models, therefore phone taken images are perfectly fine. And with references provided from the _Anchors,_ images are warped before our AI models start pulling information.
+Images taken my mobile devices \(i.e., smartphones\) work well with FormX. You may have already noticed. The first one has a more titled angle while the other has higher background noise. Images submitted to FormX will go through several image enhancing processes before they are submitted to OCR services and later fed to AI models. With references provided from the _Anchors,_ images are warped before our AI models start pulling information.
 
-![Comparison between unprocessed image and warped image](../.gitbook/assets/screenshot-2020-09-11-at-4.37.28-pm.png)
+![Comparison between unprocessed image \(left\) and warped image \(right\)](../.gitbook/assets/screenshot-2020-09-11-at-4.37.28-pm.png)
 
-## Integrate with any app
+## Integrating FormX with any app
 
-Via calling our APIs, extraction results can be obtained at any app. Navigate to the "API" tab, then copy both the form ID and your access token by clicking the buttons on the top right corner. 
+By calling our APIs, extraction results can be obtained using any app. Navigate to the "API" tab, then copy both the form ID and your access token by clicking the buttons on the top right corner. 
 
-We will then try calling the API with curl. Copy our curl example, replace the corresponding placeholders then press enter! With the correct payload given you will soon get the results. Simply translate this curl command to whatever language you app is built with, and you have got FormX integrated.
+Try calling the API with curl. Copy our curl example, replace the corresponding placeholders then press enter! With the correct payload given, you will promptly get the results. Simply translate this curl command to whatever language your app is built with, and you'll have got FormX easily integrated.
 
-If you'd like to learn more about the APIs, we do have a complete doc down the "API" tab.
+If you'd like to learn more about the APIs, we have a complete documentation in the "API" tab.
 
 ## Done!
 
-Props to you, you have now successfully extract information from a set of documents that share the same format! One more [tutorial](set-up-a-form-without-master-image.md) to go!
+You've now successfully extracted information from a set of documents that share the same format! One more [tutorial](set-up-a-form-without-master-image.md) to go!
 
