@@ -30,7 +30,7 @@
 ## API References
 
 * [Document Extraction](api-references/api-references-document-extraction.md)
-* [Post-Processing Scripts](api-references/api-references-for-post-processing-scripts.md)
+* [Post-Processing Scripts](api-references/post-processing-scripts.md)
 
 ---
 
