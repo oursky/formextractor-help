@@ -1,7 +1,7 @@
 ---
 description: >-
-  Targets that are searched throughout every document, independent from master
-  image.
+  Auto Extraction Items are targets that are searched throughout every document,
+  independent from the master image.
 ---
 
 # Auto Extraction Items
@@ -10,7 +10,7 @@ description: >-
 
 Auto Extraction Items are created to extract specific targets from documents that don't share a format, like receipts, tickets and invoices. 
 
-To configure the list of targets you are seeking, navigate to the "Setting" tab in a Form's editor and tick the ones you need. Available items depends on the "Document Type", as shown in the following mapping:
+To configure the list of targets you're seeking, navigate to the "Setting" tab in the Form's editor and check the ones you need. Available items depend on the "Document Type", as shown in the following mapping:
 
 **General**
 
@@ -32,7 +32,7 @@ To configure the list of targets you are seeking, navigate to the "Setting" tab 
 * Address
 * Date
 
-Say you have date ticked, FormX will attempt to return the best candidate it can find in uploaded image.
+For example, if you have the date ticked, FormX will attempt to return the best candidate it can find from uploaded image.
 
 This [tutorial](../get-started/set-up-a-form-without-master-image.md) covers how Auto Extraction Items work when there's no master image.
 

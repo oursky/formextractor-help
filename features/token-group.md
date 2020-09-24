@@ -1,6 +1,6 @@
 ---
 description: >-
-  Tokens added will be searched throughout uploaded documents, either a text
+  Tokens added will be searched throughout uploaded documents, either as a text
   string or image.
 ---
 
@@ -8,19 +8,21 @@ description: >-
 
 ## A quick guide
 
-Token group was originally designed and developed to differentiate receipts by user specified inputs.
+A token group was originally designed and developed to differentiate receipts by user-specified inputs.
 
-Say you have N possible shops issuing receipts and you'd like to distinguish which receipt belongs to which shop. To do that you can navigate to a Form, switch to the "Token Group" tab and:
+Let's say you have N possible shops issuing receipts and you'd like to distinguish which receipt belongs to which shop. To do that you can navigate to a Form, then switch to the "Token Group" tab and do the following:
 
-1. Create a token group called "Shop Names". Then input the N shop names.
+1. Create a token group called "Shop Names" then input the N shop names.
 2. Create another token group called "Shop Icons" and upload the N shop icons.
-3. Don't forget click save!
+3. Click save!
 
-Then throw in some receipts and have the tokens matched.
+Finally, throw in some receipts and have the tokens matched.
 
-## Here comes some samples
+## Some examples
 
-We understand it can be hard to grasp the idea without actually trying out and it can be a challenge to gather a bunch of receipts in a short time. Here's a set of Uniqlo \(some clothing brand that's quite popular here in Hong Kong\) [receipts](https://drive.google.com/drive/folders/1Aoo5IP-26rhZztlx3w710GtP2ctXIA42?usp=sharing). Click download where one will be triggered with the content zipped. Uncompress the downloaded file and you will get a directory that looks like:
+It can be challenging to gather a bunch of receipts in a short time, so we have an example here to show you how.
+
+Here's a set of Uniqlo [receipts](https://drive.google.com/drive/folders/1Aoo5IP-26rhZztlx3w710GtP2ctXIA42?usp=sharing). Click "Download" where one will be triggered with the content compressed in a `.zip` file. Uncompress the downloaded file and you will get a directory that looks like the following:
 
 ```text
 .
@@ -33,17 +35,17 @@ We understand it can be hard to grasp the idea without actually trying out and i
 └── receipt_uniqlo_4.jpg
 ```
 
-Then we will add one text token and two image tokens:
+Add one text token and two image tokens, then do the following:
 
 1. Create a token group called "Shop Names" and add a text token named `uniqlo` which is on all samples you have just downloaded.
-2. Create another token group called "Shop Icons". Inside the unzipped folder you have downloaded there is an icon subfolder. Upload the two images inside - `uniqlo_en.png` and `uniqlo_jp.png` under the newly created image token group, and named them from their file name.
-3. Remember to save!
+2. Create another token group called "Shop Icons". Inside the unzipped folder you've downloaded there is an icon subfolder. Upload the two images inside - `uniqlo_en.png` and `uniqlo_jp.png` under the newly created image token group, then named them from their file name.
+3. Save!
 
-Now, navigate to the "Test" tab and pull downloaded samples in one by one. You will see all three tokens we have added just now are showing up in the result, as shown in this screenshot:
+Now, navigate to the "Test" tab and pull in the downloaded samples in one by one. You will see that all three tokens we've added just now are showing up in the results, as shown in this screenshot:
 
 ![](../.gitbook/assets/screenshot-2020-09-15-at-5.42.38-pm.png)
 
-The JSON output indicates the tokens are matched as well, where the tokens are **grouped** and **labelled**:
+The JSON output indicates the tokens are matched as well, where the tokens are **grouped** and **labeled**:
 
 ```text
 {

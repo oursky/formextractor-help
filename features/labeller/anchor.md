@@ -1,16 +1,16 @@
 ---
-description: Marks position on a master form.
+description: An Anchor marks the position on a master form.
 ---
 
 # Anchor
 
-As its self explanatory name suggests, an _Anchor_ is a position keeper. They play an essential part in warping future uploaded images to match the master form, before extraction can properly take place.
+As its self explanatory name suggests, an _Anchor_ is a position keeper. It plays an essential part in warping images that will be uploaded in the future to match the master form, before extraction can properly take place.
 
-As a result, anchoring properly is extremely important to yield favourable extraction results. Identical parts among your documents u make good _Anchors_. It's also recommended to have at least 2 _Anchors_, preferably stretched as much as possible on the master image.
+Thus, anchoring properly is extremely important to yield favorable data extraction results. Identical parts among your documents make good _Anchors_. It's also recommended to have at least two _Anchors_, preferably stretched as much as possible on the master image.
 
-Say you have only 2 _Anchors_, to boost accuracy their location should be top and bottom, top left and bottom right, top right and bottom left, or left and right. The idea is to cover as much area as possible with the longest distance possible between the _Anchor_ pairs.
+If you have only two _Anchors_, their location should be any of the following, to boost accuracy: top and bottom; top left and bottom right; top right and bottom left; or left and right. The idea is to cover as much area as possible with the longest distance possible between the _Anchors._
 
 ![](../../.gitbook/assets/screenshot-2020-09-16-at-3.47.04-pm.png)
 
-Above is an example of _Anchor,_ where in the right bar has an tick box allowing user to decide whether one is enabled or not.
+The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not.
 
