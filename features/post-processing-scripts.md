@@ -1,25 +1,24 @@
 ---
 description: >-
-  Allowing users to write their own post processes in JavaScript, outputs from
-  Detection Regions become customizable.
+  These scripts allow users to write their own post processes in JavaScript (JS)
+  and customize outputs from Detection Regions.
 ---
 
-# Post-processing Scripts
+# Post-Processing Scripts
 
 ## A quick guide
 
-At times a user may want to process the output from Detection Regions as OCR services can return some false or not so perfect results, such as some incorrectly recognized characters or extra whitespaces. With post-processing scripts, they can apply filters to strip unwanted characters and add mappings to correct indesirable results.   
-Another possible case is that the user wish to reformat or restructure the returned results. By adding custom JS script, one can twist the returned data to whatever s/he desires.
+A user may want to process the output from [Detection Regions](labeller/detection-region.md), as OCR services can return some false, inaccuratem or unintended results, such as some incorrectly recognized characters or extra whitespaces. With post-processing scripts, they can apply filters to strip unwanted characters and add mappings to correct undesirable results. Another possible case is that the user may wish to reformat or restructure the returned results. Adding a custom JS script enables the returned data to be tailored to whatever the user wants.
 
-## How to add your own Script
+## How to add your own script
 
-In a Form's editor, create a Detection Region. The active tab in the right bar will automatically be switched to "Labeller", change "Type" to "Script":
+In a Form's editor, create a Detection Region. The active tab in the right bar will automatically be switched to "Labeller". Then change "Type" to "Script" as shown below:
 
 ![](../.gitbook/assets/screenshot-2020-09-15-at-7.31.27-pm%20%281%29.png)
 
-Then press "Edit Script" to open up the script editor where you can input your own in JavaScript:
+Click "Edit Script" to open up the script editor where you can input your own script in JavaScript:
 
 ![](../.gitbook/assets/screenshot-2020-09-15-at-7.16.32-pm.png)
 
-In fact, we have used this feature ourselves quite frequently. Almost all [templates](templates.md) have a few Detection Regions' type marked as "Script" where various text processing functions are applied.
+In fact, we've used this feature ourselves quite frequently. Almost all [templates](templates.md) have a few Detection Regions' marked as "Script" where various text-processing functions are applied.
 

@@ -18,7 +18,7 @@
 
 ## Features
 
-* [Post-processing Scripts](features/post-processing-scripts.md)
+* [Post-Processing Scripts](features/post-processing-scripts.md)
 * [Templates](features/templates.md)
 * [Key Value Pattern Detection](features/key-value-pattern-detection.md)
 * [Token Group](features/token-group.md)
