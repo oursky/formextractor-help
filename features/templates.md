@@ -1,26 +1,26 @@
 ---
 description: >-
-  Forms that are already set up for you where you can just upload corresponding
-  documents and start extracting.
+  FormX provides Forms that are already set up for you, and you can just upload
+  corresponding documents and start extracting data from them.
 ---
 
 # Templates
 
 ## A quick guide
 
-Templates are [_Forms_](../background.md#what-is-a-form) __that are sought after by many. Thus we have set them up beforehand allowing users to use one straight away.
+Templates are [_Forms_](../background.md#what-is-a-form) __that many users frequently search for and use. We've set these templates up to make it more convenient for users to use FormX straight away.
 
-They work just like an ordinary Form, only without the "Editor" tab. To test one out, navigate to the "Test" tab and upload an corresponding image.
+Templates work just like an ordinary Form, only with the "Editor" tab. To test a template, navigate to the "Test" tab and upload a corresponding image.
 
 ## List of templates
 
-Currently available forms are:
+FormX currently have these templates:
 
 * Receipts \(general receipts\)
 * Business Registration
 * Food License
-* Hong Kong ID \(New\)
-* Hong Kong ID \(Old\)
+* Hong Kong ID \(new format\)
+* Hong Kong ID \(old format\)
 
-If you have any forms that should go into the category of templates, don't hesitate to let us know!
+If you have forms that you think should go into the category of templates, please let us know!
 
