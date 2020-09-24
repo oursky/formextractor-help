@@ -6,7 +6,9 @@ Extract fields from the uploaded image
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API support both submit as form, and upload the image in "multipart/form-data", or specify all parameters in HTTP Request Header and put image in the request body or X-WORKER-IMAGE-URL
+Extracts field from an uploaded image, and can be called by:   
+- upload an image with the form ID as multipart/form-data   
+- via request body upload the form ID and image content
 {% endapi-method-description %}
 
 {% api-method-spec %}
