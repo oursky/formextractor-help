@@ -22,7 +22,7 @@ Navigate to the form listing page of FormX and click the "Add New Form" button o
 
 ![](../.gitbook/assets/screenshot-2020-09-10-at-3.58.36-pm.png)
 
-You will be prompted with a Create Form modal. Name this form "receipt invoice demo" and upload the `master_image.jpg` from the downloaded sample name cards. Then click "Create".
+You will be prompted with a Create Form modal. Name this form "receipt invoice demo" and leave the upload image box empty. Then click "Create".
 
 ![](../.gitbook/assets/screenshot-2020-09-11-at-6.55.12-pm.png)
 
