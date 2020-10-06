@@ -4,13 +4,15 @@ description: An Anchor marks the position on a master form.
 
 # Anchor
 
-As its self explanatory name suggests, an _Anchor_ is a position keeper. It plays an essential part in warping images that will be uploaded in the future to match the master form, before extraction can properly take place.
+As its self explanatory name suggests, an _Anchor_ is a **position keeper**. It plays an **essential part** in warping images that will be uploaded in the future to match the master form, before extraction can properly take place.
 
-Thus, anchoring properly is extremely important to yield favorable data extraction results. Identical parts among your documents make good _Anchors_. It's also recommended to have at least two _Anchors_, preferably stretched as much as possible on the master image.
+Thus, anchoring properly is **extremely important** to yield favorable data extraction results. Identical parts among your documents make good _Anchors_. It's also recommended to have at least two _Anchors_, preferably stretched as much as possible on the master image.
 
 If you have only two _Anchors_, their location should be any of the following, to boost accuracy: top and bottom; top left and bottom right; top right and bottom left; or left and right. The idea is to cover as much area as possible with the longest distance possible between the _Anchors._
 
+When you are unsatisfied with the extraction accuracy and it appears to be related image warping, try adding more valid _Anchors._ Areas that show up in every single document under the specific type of your form make a valid _Anchor_.
+
 ![](../../.gitbook/assets/screenshot-2020-09-16-at-3.47.04-pm.png)
 
-The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not.
+The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not. The data field "name" is a valid _Anchor_, as it appears on every single Oursky name card.
 

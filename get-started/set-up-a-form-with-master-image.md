@@ -38,13 +38,15 @@ You will be redirected to the form editor page.Now, you can start setting it up 
 
 ## Labelling the form
 
-First, we'll start with marking areas on the master form.
+Now, with the newly created form, we'll go through a few concepts before marking areas on the master image.
 
 ### Anchors
 
-An _Anchor_ is a labeled area that serves as a positional reference point, allowing FormX to warp uploaded images of this form. Since uploaded images are more or less different \(i.e. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before extracting.
+An [_Anchor_](../features/labeller/anchor.md) is a labeled area that serves as a **positional reference point**, allowing FormX to warp uploaded images of this form. Since uploaded images are more or less different \(i.e. a tilted angle\) from the master image, FormX will twist them by matching their _Anchors_ to the master form's ones before extracting.
 
-**TL;DR:** Like an actual anchor, drop one on your master form to prevent future uploaded forms from moving away. 
+For every form with a master image, **a user has to mark at least two** _**Anchors**_, with the longest distance possible between them. When they are further part, more of the master form resides between them, which will improve extraction accuracy since the warping process becomes more consistent. 
+
+**TL;DR:** Like an actual anchor, drop one on your master form to prevent future uploaded forms from moving away. **At least two are required for FormX to function properly.**
 
 You may be wondering: Which parts in the master form should I include with an _Anchor_? Identify the common parts of your documents \(with the same format, of course\), then include them with an _Anchor_.
 
