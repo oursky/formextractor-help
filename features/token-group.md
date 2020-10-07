@@ -18,6 +18,14 @@ Let's say you have N possible shops issuing receipts and you'd like to distingui
 
 Finally, throw in some receipts and have the tokens matched.
 
+### Text Token
+
+Once a text token is added to a [_Form_](../background.md#what-is-a-form), FormX will always look for a match on uploaded documents. User can opt for an exact match or have all whitespace trimmed when matching is performed.
+
+### Image Token
+
+The image version of text token, where a user can upload an image and FormX will search through uploaded documents to find a match.
+
 ## Some examples
 
 It can be challenging to gather a bunch of receipts in a short time, so we have an example here to show you how.

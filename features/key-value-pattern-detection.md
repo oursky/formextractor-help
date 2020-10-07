@@ -6,7 +6,7 @@ description: FormX provides a way to find a 'Value' by describing its 'Key' appe
 
 ## A quick guide
 
-Sometimes, a user would like to extract some target \(i.e. a "Value"\) based on its adjacent text, which, in this feature one is called a "Key". FormX provides Key Value pattern matching to hep users achieve this. 
+Sometimes, a user would like to extract some target \(i.e. a "Value"\) based on its surrounding text, which, in this feature one is called a "Key". FormX provides Key Value pattern matching to hep users achieve this. Say you are looking for some ID on a receipt which is always printed on the right side ofthe word "ID:", you can add a Key Value pair with "ID:" as the label and leave the position field unchanged as its default is "right". To boost accuracy, you can also enable fuzzy search and/or apply regular expression.
 
 ## How to add a Key Value pattern
 

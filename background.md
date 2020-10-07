@@ -93,6 +93,10 @@ Each scenario has its own tutorial. After finishing them, you'll be more familia
 
 **Scenario 2 Tutorial:** [Set up a form without master image](get-started/set-up-a-form-without-master-image.md)
 
+## Got a problem waiting to be solved?
+
+We have aggregate the needs and solutions into a [table](get-started/feature-pointing-guide.md), which you can tackle your challenges accordingly! 
+
 ## Further readings
 
 Once you have finished the tutorials and would like to learn more about the implementation of FormX, this [article](https://blog.oursky.com/2020/04/06/formextractor-behind-the-scenes-how-artificial-intelligence-ai-is-used-to-extract-and-capture-data/) is for you!
