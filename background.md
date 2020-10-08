@@ -30,6 +30,14 @@ Here’s a quick summary of FormX’s platforms:
 * FormX ****Desktop App - Available on Windows and Mac; it's designed for batch uploads and processing form images.
 * API - An inherent way to integrate FormX with your applications.
 
+Below is a diagram visualizing FormX API calling flow. Note that a _Form_ has to be set up first before extraction can take place.
+
+![](.gitbook/assets/screenshot-2020-10-08-at-4.10.59-pm%20%281%29.png)
+
+And if you instead wish to directly save excel-ready extraction results to your machine instead of obtaining them on an application, you can drag target photos to our desktop app:
+
+![](.gitbook/assets/screenshot-2020-10-08-at-4.10.09-pm.png)
+
 Before diving into the user scenarios, it's crucial to understand what a _Form_ is in FormX.
 
 ### What is a _Form_?
