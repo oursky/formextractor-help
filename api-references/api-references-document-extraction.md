@@ -1,14 +1,18 @@
 # Document Extraction
 
-{% api-method method="post" host="https://worker.formextractorai.com" path="/extract-fields" %}
+{% api-method method="post" host="https://worker.formextractorai.com" path="/extract" %}
 {% api-method-summary %}
 Extract fields from the uploaded image
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Extracts field from an uploaded image, and can be called by:   
-- upload an image with the form ID as multipart/form-data   
-- via request body upload the form ID and image content
+Extraction fields are isolated from an uploaded image before OCR takes place on them.  
+  
+Form ID can be submitted as **multipart/form-data** or through a **header**.   
+Image can be uploaded **as is \(binary\)** or through an **image\_url**.   
+  
+For **uploading image directly**, it can be uploaded in the **request body** or via **multipart/form-data**.   
+On the other hand, if you want to specify an **image\_url**, it can be submitted via a **header** or **multipart/form-data**.
 {% endapi-method-description %}
 
 {% api-method-spec %}
