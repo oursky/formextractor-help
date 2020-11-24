@@ -6,6 +6,12 @@ description: >-
 
 # Basics
 
+## Not up for reading?
+
+We have create a video covering our core concepts and which feature suits your requirements.
+
+{% embed url="https://www.youtube.com/watch?v=O3DB\_SwapP8&feature=youtu.be&ab\_channel=OurskyLimited" %}
+
 ## What is FormX?
 
 FormX is a data extraction service, transforming analogue information on physical documents into digital, structured JavaScript Object Notation \(JSON\) values. Once you upload a copy of a document \(in an image format\) that you'd like to extract data from, you can specify the you'd like to extract and FormX will return them in JSON format, ready to be integrated with other applications.
