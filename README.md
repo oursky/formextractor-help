@@ -12,9 +12,9 @@ If you're curious about how FormX works behind the scenes, you can read our blog
 
 ## For new users
 
-FormX is intuitive for both developers and end users. Read the basics and go through our "Get Started" tutorials to familiarize yourself with FormX.
+FormX is designed for both developers and end users. Read the basics and go through our "Get Started" tutorials to familiarize yourself with FormX.
 
-If you are a newcomer and have no idea how FormX works, worry not! After reading the [Basics](background.md) and going through the get started tutorials, you will become familiar with working FormX.
+If you are a newcomer and have no idea how FormX works, worry not! After reading the [Basics](background.md) and going through those get-started tutorials, you will become an expert on this!
 
 ## Contact us
 
