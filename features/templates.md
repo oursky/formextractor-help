@@ -4,7 +4,7 @@ description: >-
   corresponding documents and start extracting data from them.
 ---
 
-# Templates
+# Pre-defined Documents
 
 ## A quick guide
 
