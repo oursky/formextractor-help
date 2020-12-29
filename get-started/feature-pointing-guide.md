@@ -4,7 +4,7 @@ description: >-
   to point you in the right direction.
 ---
 
-# Feature Pointing Guide
+# Which features should I use?
 
 Below is a table on which feature\(s\) to go for with the target on left. You are still recommended to finish set up [one](set-up-a-form-with-master-image.md) and [two](set-up-a-form-without-master-image.md) before trying out any of them. 
 
@@ -27,17 +27,14 @@ Below is a table on which feature\(s\) to go for with the target on left. You ar
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p>Extract key information from all uploaded documents</p>
-        <p><b>(if one is on our Auto Extraction Item list)</b>
-        </p>
-      </td>
-      <td style="text-align:left"><a href="../features/auto-extraction-items.md">Auto Extraction Items</a>
-      </td>
+      <td style="text-align:left">Extract key information such as Total Amount, Date, Time, Address, Name</td>
+      <td
+      style="text-align:left"><a href="../features/auto-extraction-items.md">Auto Extraction Items</a>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p>Twist output of an area on uploaded documents</p>
+        <p>Extract data from an area with some post-processing</p>
         <p><b>(master form required)</b>
         </p>
       </td>

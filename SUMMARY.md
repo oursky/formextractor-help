@@ -7,7 +7,7 @@
 
 * [Set up a form with a master image](get-started/set-up-a-form-with-master-image.md)
 * [Set up a form without a master image](get-started/set-up-a-form-without-master-image.md)
-* [Feature Pointing Guide](get-started/feature-pointing-guide.md)
+* [Which features should I use?](get-started/feature-pointing-guide.md)
 
 ## Use cases
 
