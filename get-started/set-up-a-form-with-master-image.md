@@ -30,7 +30,7 @@ A new form will be created. Click on the "business registration form" new form.
 
 ![](../.gitbook/assets/screenshot-2021-01-06-at-2.28.13-pm.png)
 
-You will be redirected to the form editor page.Now, you can start setting it up, so that FormX can extract data from the other BR forms based on this form.
+You will be redirected to the form editor page. Now, you can start setting it up, so that FormX can extract data from the other BR forms based on this form.
 
 ![](../.gitbook/assets/screenshot-2021-01-06-at-2.29.35-pm.png)
 
