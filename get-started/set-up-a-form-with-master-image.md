@@ -10,11 +10,11 @@ description: >-
 
 * An account on FormX [portal](https://formextractor.oursky.com/)
 * An understanding on [background](../background.md) of FormX's basics
-* [Sample business/name cards](https://drive.google.com/drive/folders/1DUEMq6uoKQmFWw-gI9gMXrGyW3VLKIAt?usp=sharing) that will be used in this tutorial
+* Sample [Business Registration \(BR\) Forms](https://drive.google.com/drive/folders/12hSnSbN2JyY_iwi3XAhBiMxpp1wCvHib?usp=sharing) that will be used in this tutorial
 
 ## Objective
 
-Obtain the following information from the business/name cards: {name}, {job title}, {email}.
+Obtain the following information from the business registration forms: {name of business}, {branch name}, {expiry date}.
 
 ## Creating a Form
 
@@ -22,21 +22,21 @@ Navigate to the form listing page of FormX and click the "Add New Form" button o
 
 ![](../.gitbook/assets/screenshot-2021-01-05-at-6.40.54-pm.png)
 
-You will be prompted with a Create Form modal. Name this form "name card dem" and upload the `master_image.jpg` from the downloaded sample name cards. Then click "Create".
+You will be prompted with a Create Form modal. Name this form "business registration form" and upload the `br_master_image.jpg` from the downloaded sample BR forms. Then click "Create":
 
-![](../.gitbook/assets/screenshot-2021-01-05-at-6.55.44-pm.png)
+![](../.gitbook/assets/screenshot-2021-01-06-at-2.22.49-pm.png)
 
-A new form will be created. Click on the "name card demo" new form.
+A new form will be created. Click on the "business registration form" new form.
 
-![](../.gitbook/assets/screenshot-2021-01-05-at-6.56.16-pm.png)
+![](../.gitbook/assets/screenshot-2021-01-06-at-2.28.13-pm.png)
 
-You will be redirected to the form editor page.Now, you can start setting it up so that FormX can extract data on the sample name cards based on this form.
+You will be redirected to the form editor page.Now, you can start setting it up, so that FormX can extract data from the other BR forms based on this form.
 
-![](../.gitbook/assets/screenshot-2021-01-05-at-7.11.46-pm.png)
+![](../.gitbook/assets/screenshot-2021-01-06-at-2.29.35-pm.png)
 
 ## Labelling the form
 
-Now, with the newly created form, we'll go through a few concepts before marking areas on the master image.
+Now, we'll first go through a few concepts before marking areas on the master image.
 
 ### Anchors
 
@@ -48,17 +48,21 @@ For every form with a master image, **a user has to mark at least two** _**Ancho
 
 You may be wondering: which parts in the master form should I mark with an _Anchor_? Identify the **common parts** of your form, then include them with an _Anchor_. Bear in mind that parts which vary across different documents of the same form should **not** be anchors.
 
-#### Adding some to the name card master image
+#### Adding some to the master image
 
-In the example, we'll mark three anchors — telephone number, Hong Kong \(HK\) and Taiwan \(TW\) address, which are the **common parts** of this Oursky name card form. Other areas like name, position and email are different on every name card instance, so they **don't make good** anchors.
+In the example, we'll mark three anchors which are the **common parts** of a BR form. Other areas like the actual name of business \(i.e. KXX DXX TRANSPORTATION COMPANY\) are different on every BR instance, so they **don't make good** anchors.
 
 Choose the second tool as shown in the image below to mark an _Anchor_.
 
-![](../.gitbook/assets/screenshot-2021-01-05-at-7.29.36-pm.png)
+![](../.gitbook/assets/screenshot-2021-01-06-at-5.14.33-pm.png)
 
-Then mark four points as shown in the GIF below. Note that to create an _Anchor_, the final point must connect with the first. Once the name and telephone number are marked, scroll down and include the two addresses as well
+Then mark points where the last connects with the first to create an _Anchor_, as shown in the GIF below. 
 
-The master form now has enough _Anchors_, which can then be used to check the corresponding parts of future uploaded name cards.
+Note that only three _Anchors_ are marked here, while there exist other common parts that make good _Anchors_ in a BR form, such as the field names "Name of Business/Corporation", "Business/Branch Name" and "Address". Don't confuse them with the field values though, as the field names don't change across BR forms while the values do.
+
+![](../.gitbook/assets/ezgif-7-aaa61b2b35b0.gif)
+
+The master form now has enough _Anchors_ to warp properly.
 
 ### Detection Regions
 
@@ -68,31 +72,27 @@ _Detection Regions_ are the areas that are marked from which you need data extra
 
 #### Adding Detection Regions
 
-In this example, we'll extract name, job title and email for these name cards. To do so, they will be marked via _Detection Regions_.
+In this example, we'll extract name of business, branch name and expiry date from BR forms. To do so, they will be marked with _Detection Regions_.
 
 Choose the third tool marked with a red box in the screenshot below:
 
-![](../.gitbook/assets/screenshot-2021-01-05-at-8.02.53-pm.png)
+![](../.gitbook/assets/screenshot-2021-01-06-at-5.37.52-pm.png)
 
-As shown below, we'll add three _Detection Regions,_ each containing a field called ‘name,’ ‘job title,’ and ‘email’.
+As shown below, we'll add three _Detection Regions,_ each containing a field called "name of business", "branch name", and "expiry date".
 
-![](../.gitbook/assets/screen-recording-2021-01-05-at-8.06.26-pm.gif)
+![](../.gitbook/assets/ezgif-7-036dabcfb491.gif)
 
 Click the "Save" button. Now you've finished setting up this form!
 
-## Test it out with other name cards
+## Test it out with other BR forms
 
-There are two more name cards in the ZIP file you've downloaded at the start of this tutorial. They will be fed to our freshly created form to have the target data extracted.
+There are two more BR forms in the ZIP file you've downloaded at the start of this tutorial. They will be fed to our freshly created form to have the target data extracted.
 
-Navigate to the "Test" tab and choose `sample1.JPG`. This will trigger an extraction which will complete in no time. Repeat these steps with `sample2.JPG` and you will get similar results.
+Navigate to the "Test" tab and choose `br_2_mobile_taken`. This will trigger an extraction which will complete in no time. Repeat these steps with the other image and you will get similar results.
 
-![](../.gitbook/assets/ezgif-7-05eb3b17bdc0.gif)
+![](../.gitbook/assets/ezgif-7-048fa1738870.gif)
 
-Try both name cards and you will see that the input images are warped and "aligned" to the master form. The extraction results are listed out with each image's corresponding fragment, and enclosed with a JSON value at the very bottom.
-
-As a result, images taken my mobile devices \(i.e., smartphones\) work well with FormX, which you may have already noticed. 
-
-The first name card has a more titled angle while the other has higher background noise. Images submitted to FormX will go through several image enhancing processes before they are submitted to OCR services and later fed to AI models. One of these processes is image warping, made possible with _Anchors_ marked.
+As shown in the gif above, `br_2_mobile_taken` originally has a tilted angle but it's corrected and aligned once it's uploaded and warped. It was taken with a mobile phone with a not-so-perfect angle, still FormX manages to enhance such images "lesser" in quality and returns satisfactory results. 
 
 ## Integrating FormX with any app
 
