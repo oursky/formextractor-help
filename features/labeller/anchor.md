@@ -12,7 +12,7 @@ If you have only two _Anchors_, their location should be any of the following, t
 
 When you are unsatisfied with the extraction accuracy and it appears to be related image warping, try adding more valid _Anchors._ Areas that show up in every single document under the specific type of your form make a valid _Anchor_.
 
-![](../../.gitbook/assets/screenshot-2020-09-16-at-3.47.04-pm.png)
+![](../../.gitbook/assets/screenshot-2021-01-15-at-8.03.35-pm%20%281%29.png)
 
-The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not. The data field "name" is a valid _Anchor_, as it appears on every single Oursky name card.
+The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not. Two _Anchors_ are marked here, where the selected one is the title of a Business Registration form and the other top left one with the word "ORIGINAL" in it.
 
