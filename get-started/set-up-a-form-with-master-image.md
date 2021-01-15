@@ -22,7 +22,7 @@ Navigate to the form listing page of FormX and click the "Add New Form" button o
 
 ![](../.gitbook/assets/screenshot-2021-01-05-at-6.40.54-pm.png)
 
-You will be prompted with a Create Form modal. Name this form "business registration form" and upload the `br_master_image.jpg` from the downloaded sample BR forms. Then click "Create":
+You will be prompted with a Create Form modal. Name this form "business registration form" and upload the [`br_master_image.jpg`](https://drive.google.com/file/d/1YF3RddeqKW4J11vO9QhuiCOfWca9--Rh/view?usp=sharing) from the downloaded sample BR forms. Then click "Create":
 
 ![](../.gitbook/assets/screenshot-2021-01-06-at-2.22.49-pm.png)
 
@@ -34,7 +34,7 @@ You will be redirected to the form editor page. Now, you can start setting it up
 
 ![](../.gitbook/assets/screenshot-2021-01-06-at-2.29.35-pm.png)
 
-## Labelling the form
+## Set up the form
 
 Now, we'll first go through a few concepts before marking areas on the master image.
 
@@ -45,6 +45,10 @@ An [_Anchor_](../features/labeller/anchor.md) is a labeled area that serves as a
 For every form with a master image, **a user has to mark at least two** _**Anchors**_, with the longest distance possible between them. When they are further part, more of the form resides between them, which will improve extraction accuracy since the warping process becomes more consistent. 
 
 **TL;DR:** Like an actual anchor, drop one on your master form to prevent future uploaded forms from moving away. **At least two are required for FormX to function properly.**
+
+An example image is shown below, where two parts on a Business Registration form are marked as _Anchors_ - the "ORIGINAL" one and the title. We will go through anchor-marking in a later paragraph.
+
+![](../.gitbook/assets/screenshot-2021-01-15-at-8.08.51-pm.png)
 
 You may be wondering: which parts in the master form should I mark with an _Anchor_? Identify the **common parts** of your form, then include them with an _Anchor_. Bear in mind that parts which vary across different documents of the same form should **not** be anchors.
 
