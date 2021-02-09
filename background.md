@@ -113,5 +113,5 @@ We have aggregate the needs and solutions into a [table](get-started/feature-poi
 
 ## Further readings
 
-Once you have finished the tutorials and would like to learn more about the implementation of FormX, this [article](https://blog.oursky.com/2020/04/06/formextractor-behind-the-scenes-how-artificial-intelligence-ai-is-used-to-extract-and-capture-data/) is for you!
+Once you have finished the tutorials and would like to learn more about the implementation of FormX, this [article](https://code.oursky.com/how-to-implement-receipt-data-extraction-ocr-regex-ai/) is for you!
 
