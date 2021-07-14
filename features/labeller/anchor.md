@@ -16,7 +16,7 @@ When you are unsatisfied with the extraction accuracy and it appears to be relat
 
 The screenshot above is an example of _Anchor_. The right bar has a check box that allows users to decide whether one is enabled or not. Two _Anchors_ are marked here, where the selected one is the title of a Business Registration form and the other top left one with the word "ORIGINAL" in it.
 
-As mentioned above, to boost image warping accuracy which improves that of data extraction, _**Anchors**_ **should be spread across the master form as much as possible**, which is indicated by the green box in the below image. That way FormX learns more about your form's appearance, hence can yield better extraction results. We have marked only three here for simplicity where the our actual Business Registration form template has much more _Anchors_.
+As mentioned above, to boost image warping accuracy which improves that of data extraction, _**Anchors**_ **should be spread across the master form as much as possible**, which is indicated by the green box in the below image. We have marked only three here for simplicity where the our actual Business Registration form template has much more _Anchors_.
 
 ![](../../.gitbook/assets/screenshot-2021-01-15-at-8.23.22-pm.png)
 
