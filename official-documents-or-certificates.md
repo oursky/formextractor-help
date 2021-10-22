@@ -17,9 +17,9 @@ If there's a need to extract information from a collection of documents sharing 
 
 ### Documents issued by government agencies
 
-FormX played an integral part in the online application system of a financial support campaign in Hong Kong \(HK\) called [Instant Relief Fund](https://www.lksf.org/successful-completion-of-thecrunch-time-instant-relief-fund-projecttotal-distribution-amount-hk1-009-billion/). Through this campaign, small and medium-sized enterprises \(SMEs\) can apply for funds to aid them survive through recent economy slumps.
+FormX played an integral part in the online application system of a financial support campaign in Hong Kong (HK) called [Instant Relief Fund](https://www.lksf.org/successful-completion-of-thecrunch-time-instant-relief-fund-projecttotal-distribution-amount-hk1-009-billion/). Through this campaign, small and medium-sized enterprises (SMEs) can apply for funds to aid them survive through recent economy slumps.
 
-We worked with Google Cloud to provide data extraction models on documents issued by the HK government including **Business Registration, Food License, Travel Agents Licence and Hawker Licence**. Applicants can take photos of their license\(s\) and upload them, after which FormX automatically obtains the target data off the images.
+We worked with Google Cloud to provide data extraction models on documents issued by the HK government including **Business Registration, Food License, Travel Agents Licence and Hawker Licence**. Applicants can take photos of their license(s) and upload them, after which FormX automatically obtains the target data off the images.
 
 ### Vehicle licenses
 
@@ -32,4 +32,3 @@ Integrated into an appointment management app, FormX extracted information from 
 ## Try them out!
 
 A majority of these mentioned documents are available on FormX's portal as [templates](features/templates.md). No set-up is needed, and you can just upload an image to try a template out.
-

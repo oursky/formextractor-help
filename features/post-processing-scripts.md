@@ -14,11 +14,10 @@ A user may want to process the output from [Detection Regions](labeller/detectio
 
 In a Form's editor, create a Detection Region. The active tab in the right bar will automatically be switched to "Labeller". Then change "Type" to "Script" as shown below:
 
-![](../.gitbook/assets/screenshot-2020-09-15-at-7.31.27-pm%20%281%29.png)
+![](<../.gitbook/assets/Screenshot 2020-09-15 at 7.31.27 PM (1).png>)
 
 Click "Edit Script" to open up the script editor where you can input your own script in JavaScript:
 
-![](../.gitbook/assets/screenshot-2020-09-15-at-7.16.32-pm.png)
+![](<../.gitbook/assets/Screenshot 2020-09-15 at 7.16.32 PM.png>)
 
 In fact, we've used this feature ourselves quite frequently. Almost all [templates](templates.md) have a few Detection Regions' marked as "Script" where various text-processing functions are applied.
-

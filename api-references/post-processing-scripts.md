@@ -51,22 +51,26 @@ This searches through a text with user-defined pattern
 
 Parameters:
 
-* pattern \(string\): Will be used to search target text
-* text \(string\): The target text where search will be conducted upon
-* options \(FuzzySearchOptions\): _Optional parameters_
+* pattern (string): Will be used to search target text
+* text (string): The target text where search will be conducted upon
+* options (FuzzySearchOptions): _Optional parameters_
   * Options for configuring the fuzzy search behaviour
-    * max\_subs \(number\)_Optional_ Maximum subsitutions between the pattern and return string
-    * max\_insert \(number\) _Optional_ Amount of character that can be skipped in the pattern
-    * max\_delete \(number\) _Optional_ Amount of character that can be skipped in the return string
-    * max\_l\_dist \(number\) _Optional_ Maximum Levenshtein distance allowed between the pattern and return string
+    * max\_subs (number)_Optional_\
+      __Maximum subsitutions between the pattern and return string
+    * max\_insert (number) _Optional_\
+      Amount of character that can be skipped in the pattern
+    * max\_delete (number) _Optional_\
+      __Amount of character that can be skipped in the return string
+    * max\_l\_dist (number) _Optional_\
+      Maximum Levenshtein distance allowed between the pattern and return string
 
 Return Value:
 
-* matches \(Match\[\]\): Array of matches
-  * start \(number\): Start position of the match
-  * end \(number\): End position of the match
-  * dist \(number\): Levenshtein distance between the matched part and the pattern
-  * matched \(string\): matched part
+* matches (Match\[]): Array of matches
+  * start (number): Start position of the match
+  * end (number): End position of the match
+  * dist (number): Levenshtein distance between the matched part and the pattern
+  * matched (string): matched part
 
 ```javascript
 edit_distance(string1, string2)
@@ -76,10 +80,9 @@ Returns the distance between two strings
 
 Parameters:
 
-* string1 \(string\)**:** First string that will be compared with the other
-* string2 \(string\): The other string
+* string1 (string)**: **First string that will be compared with the other
+* string2 (string): The other string
 
 Return Value:
 
-* Edit distance \(number\)
-
+* Edit distance (number)

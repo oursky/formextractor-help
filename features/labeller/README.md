@@ -10,4 +10,3 @@ Currently we have two types of such areas:
 * Detection Region
 
 which will be covered in their own sections.
-

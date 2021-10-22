@@ -1,14 +1,14 @@
 ---
-description: 'Learn more about FormX, how it works, and how to use its powerful features.'
+description: Learn more about FormX, how it works, and how to use its powerful features.
 ---
 
 # FormX Documentation and Guide
 
 This documentation provides background information about FormX and will walk users through business cases and scenarios where FormX can come in handy.
 
-In a nutshell, FormX extracts information from physical documents and returns structured data pairs in JavaScript Object Notation \(JSON\) format, making it integrable with most systems and other software or applications.
+In a nutshell, FormX extracts information from physical documents and returns structured data pairs in JavaScript Object Notation (JSON) format, making it integrable with most systems and other software or applications.
 
-If you're curious about how FormX works behind the scenes, you can read our blog posts on how FormX uses Artificial Intelligence \(AI\) to extract data and its use cases for business process automation.
+If you're curious about how FormX works behind the scenes, you can read our blog posts on how FormX uses Artificial Intelligence (AI) to extract data and its use cases for business process automation.
 
 ## For new users
 
@@ -16,7 +16,12 @@ FormX is designed for both developers and end users. Read the basics and go thro
 
 If you are a newcomer and have no idea how FormX works, worry not! After reading the [Basics](background.md) and going through those get-started tutorials, you will become an expert on this!
 
+### Learn how to set up your intelligent document extractor in 8 minutes
+
+{% embed url="https://www.youtube.com/watch?v=NWeBJgVue9c" %}
+Walkthrough of all the different types of document extraction methods
+{% endembed %}
+
 ## Contact us
 
 This documentation is a work in progress and will be updated with more information and pro tips from time to time. If you have any questions, please feel free to contact us via [hello@formextractor.ai](mailto:hello@formextractor.ai).
-

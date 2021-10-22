@@ -4,5 +4,3 @@ If you have functionalities that you think FormX's current features wouldn't be 
 
 Don't hesitate to [send us an email](mailto:hello@oursky.com) with your requirements and contact details, we'll reach out to you as soon as possible!
 
-
-

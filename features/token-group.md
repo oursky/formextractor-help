@@ -32,7 +32,7 @@ It can be challenging to gather a bunch of receipts in a short time, so we have 
 
 Here's a set of Uniqlo [receipts](https://drive.google.com/drive/folders/1Aoo5IP-26rhZztlx3w710GtP2ctXIA42?usp=sharing). Click "Download" where one will be triggered with the content compressed in a `.zip` file. Uncompress the downloaded file and you will get a directory that looks like the following:
 
-```text
+```
 .
 ├── icons
 │   ├── uniqlo_en.png
@@ -51,11 +51,11 @@ Add one text token and two image tokens, then do the following:
 
 Now, navigate to the "Test" tab and pull in the downloaded samples in one by one. You will see that all three tokens we've added just now are showing up in the results, as shown in this screenshot:
 
-![](../.gitbook/assets/screenshot-2020-09-15-at-5.42.38-pm.png)
+![](<../.gitbook/assets/Screenshot 2020-09-15 at 5.42.38 PM.png>)
 
 The JSON output indicates the tokens are matched as well, where the tokens are **grouped** and **labeled**:
 
-```text
+```
 {
   "status": "ok",
   "form_id": "some_id",
@@ -102,4 +102,3 @@ The JSON output indicates the tokens are matched as well, where the tokens are *
   ]
 }
 ```
-
