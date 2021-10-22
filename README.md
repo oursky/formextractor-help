@@ -25,5 +25,3 @@ Walkthrough of all the different types of document extraction methods
 ## Contact us
 
 This documentation is a work in progress and will be updated with more information and pro tips from time to time. If you have any questions, please feel free to contact us via [hello@formextractor.ai](mailto:hello@formextractor.ai).
-
-Test Sync
