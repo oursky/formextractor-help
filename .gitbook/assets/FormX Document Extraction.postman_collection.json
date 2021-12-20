@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "83d76511-85cf-44ca-b067-45465bc8415f",
+		"name": "FormX Document Extraction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FormX Extract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-WORKER-TOKEN",
+						"value": "{{X-WORKER-TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "X-WORKER-FORM-ID",
+						"value": "{{X-WORKER-FORM-ID}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/fung/Downloads/UIPath-FormX-Receipt Demo/receipt-00012.jpg"
+					},
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://worker.formextractorai.com/extract",
+					"protocol": "https",
+					"host": [
+						"worker",
+						"formextractorai",
+						"com"
+					],
+					"path": [
+						"extract"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "X-WORKER-TOKEN",
+			"value": ""
+		},
+		{
+			"key": "X-WORKER-FORM-ID",
+			"value": ""
+		}
+	]
+}

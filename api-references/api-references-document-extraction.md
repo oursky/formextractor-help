@@ -23,9 +23,149 @@ https://worker.formextractorai.com/extract \
 --data-binary "@/path/to/query/image.jpg"
 ```
 
+### Code Examples
+
+{% tabs %}
+{% tab title="Python" %}
+```python
+import requests
+
+url = "https://worker.formextractorai.com/extract"
+
+payload=open('FILE_PATH_TO_IMAGE', 'rb')
+headers = {
+  'X-WORKER-TOKEN': 'ACCESS_TOKEN',
+  'X-WORKER-FORM-ID': 'FORM_ID',
+  'Content-Type': 'image/jpeg'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+```
+{% endtab %}
+
+{% tab title="Node.js" %}
+```javascript
+var fs = require('fs');
+var request = require('request');
+var options = {
+  'method': 'POST',
+  'url': "https://worker.formextractorai.com/extract",
+  'headers': {
+    'X-WORKER-TOKEN': "ACCESS_TOKEN",
+    'X-WORKER-FORM-ID': "FORM_ID",
+    'Content-Type': 'image/jpeg',
+    'X-WORKER-ENCODING': 'base64'
+  },
+  body: base64_encode("FILE_PATH_TO_IMAGE")
+
+};
+
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+
+
+// function to encode file data to base64 encoded string
+function base64_encode(file) {
+    // read binary data
+    var bitmap = fs.readFileSync(file);
+    // convert binary data to base64 encoded string
+    return new Buffer(bitmap).toString('base64');
+}
+```
+{% endtab %}
+
+{% tab title="Go" %}
+```go
+package main
+
+import (
+  "fmt"
+  "strings"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://worker.formextractorai.com/extract"
+  method := "POST"
+
+  payload := strings.NewReader("<file contents here>")
+
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  req.Header.Add("X-WORKER-TOKEN", "ACCESS_TOKEN")
+  req.Header.Add("X-WORKER-FORM-ID", "FORM_ID")
+  req.Header.Add("Content-Type", "image/jpeg")
+
+  res, err := client.Do(req)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  defer res.Body.Close()
+
+  body, err := ioutil.ReadAll(res.Body)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  fmt.Println(string(body))
+}
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://worker.formextractorai.com/extract',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS => "<file contents here>",
+  CURLOPT_HTTPHEADER => array(
+    'X-WORKER-TOKEN: ACCESS_TOKEN',
+    'X-WORKER-FORM-ID: FORM_ID',
+    'Content-Type: image/jpeg'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+```
+{% endtab %}
+{% endtabs %}
+
+### Postman Example
+
+You can download the following file and import it to the [Postman](https://www.postman.com) app to test the API. Remember to set the `X-WORKEN_TOKEN` and `X-WORKER-FORM-ID` variables in the collection scope to configure your form.
+
+{% file src="../.gitbook/assets/FormX Document Extraction.postman_collection.json.zip" %}
+Postman Collection
+{% endfile %}
+
 ## Making the Request
 
-If you want to upload the image directly, it can be uploaded in the request body or via multipart/form-data. If you want to specify an image url, it can be submitted via a header or multipart/form-data.
+If you want to upload the image directly, it can be uploaded in the request body or via multipart/form-data. If you want to specify an image URL, it can be submitted via a header or multipart/form-data.
 
 Most of the parameters can be submitted either as multipart/form-data or as request headers.
 

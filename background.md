@@ -28,12 +28,12 @@ Pulling data off physical documents is not new. Optical character readers, or so
 
 ## How can FormX be used?
 
-There are two main pain points that FormX can solve. Both scenarios require some quick setup. For the time being, _Form _creation and all set-up tasks can only be carried out on the FormX [portal](https://formextractor.oursky.com/form). Meanwhile, extractions can be done on the FormX portal, desktop app or via application programming interfaces APIs, where you can submit photocopies of documents and receive results.
+There are two main pain points that FormX can solve. Both scenarios require some quick setup. For the time being, _Form_ creation and all set-up tasks can only be carried out on the FormX [portal](https://formextractor.oursky.com/form). Meanwhile, extractions can be done on the FormX portal, desktop app or via application programming interfaces APIs, where you can submit photocopies of documents and receive results.
 
 Here’s a quick summary of FormX’s platforms:
 
-* FormX** **Portal - Its functionalities include setting up forms, managing payment and the access token, downloading the desktop app and testing out sample images one by one.
-* FormX** **Desktop App - Available on Windows and Mac; it's designed for batch uploads and processing form images.
+* FormX **** Portal - Its functionalities include setting up forms, managing payment and the access token, downloading the desktop app and testing out sample images one by one.
+* FormX **** Desktop App - Available on Windows and Mac; it's designed for batch uploads and processing form images.
 * API - An inherent way to integrate FormX with your applications.
 
 Below is a diagram visualizing FormX API calling flow. Note that a _Form_ has to be set up first before extraction can take place.
@@ -50,7 +50,7 @@ Before diving into the user scenarios, it's crucial to understand what a _Form_ 
 
 A _Form_ represents a format of document. By creating and configuring a _Form_, a user passes a set of instructions about a specific form format to FormX, which will be used to extract information from forms with such format.
 
-Guides on using the portal and setting up a _Form _are covered in later tutorials, for now you only have to understand the concepts.
+Guides on using the portal and setting up a _Form_ are covered in later tutorials, for now you only have to understand the concepts.
 
 ### Scenario 1: Data extraction from a set of documents with the same format
 
@@ -64,13 +64,13 @@ In short, the user _tells_ FormX about the format of incoming documents, so that
 
 ### Scenario 2: Data extraction from all kinds of documents with Auto Extraction Items
 
-Unlike the aforementioned scenario, FormX can still be used _without a _ _master image_. FormX offers a list of [Auto Extraction Items](features/auto-extraction-items.md), which are a bunch of targets that can be pulled off from different types of documents.
+Unlike the aforementioned scenario, FormX can still be used _without a_ _master image_. FormX offers a list of [Auto Extraction Items](features/auto-extraction-items.md), which are a bunch of targets that can be pulled off from different types of documents.
 
 FormX already has corresponding AI models trained. As a result all a user has to do is to create a _form_ and tick the targets from the list of Auto Extraction Items.&#x20;
 
 For example, let's say you want to get the date from a pile of receipts. Tick the date box under the list of Auto Extraction Items on FormX's portal. You can then upload the image copies of the receipts and have their date extracted.
 
-**TL;DR: **FormX can extract specific data targets from any documents, **as long as FormX supports that target**.
+**TL;DR:** FormX can extract specific data targets from any documents, **as long as FormX supports that target**.
 
 **Examples:** Receipts, tickets (e.g. flight, train, movie, etc.), bank statements (if only available targets are needed), etc.
 
@@ -78,7 +78,7 @@ For example, let's say you want to get the date from a pile of receipts. Tick th
 
 To further help you grasp these ideas, let's go through a few examples. Let's say you have three types of documents with the following extraction targets:
 
-1. A pile of **driving licenses **with same format — **name, address, age**
+1. A pile of **driving licenses** with same format — **name, address, age**
 2. A pile of **business registration** documents, same format — **company name, issue date, address**
 3. A stack of **receipts** from different shops — **date, time, price**
 
@@ -88,7 +88,7 @@ Since 1 and 2 both have a format to follow, they lie in the first scenario. They
 
 * First, pick a member out of the pile with a clear resolution
 * Create a _Form_ and upload that member as the master image
-* Set up the _Form _with tools on our portal, e.g. labelling areas, specifying target data
+* Set up the _Form_ with tools on our portal, e.g. labelling areas, specifying target data
 * Save!
 
 For 3, these types of documents are issued by a range of shops so they don't share a format. Therefore, the set-up flow will be a bit different:

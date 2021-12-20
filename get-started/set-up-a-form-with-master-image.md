@@ -40,7 +40,7 @@ Now, we'll first go through a few concepts before marking areas on the master im
 
 ### Anchors
 
-An [_Anchor_](../features/labeller/anchor.md) is a labeled area that serves as a **positional reference point**, allowing FormX to warp uploaded images of a form. Since uploaded images are more or less different (e.g. a tilted angle) from the master image, FormX will have to twist them by matching their _Anchors _to the master form's ones before extracting.
+An [_Anchor_](../features/labeller/anchor.md) is a labeled area that serves as a **positional reference point**, allowing FormX to warp uploaded images of a form. Since uploaded images are more or less different (e.g. a tilted angle) from the master image, FormX will have to twist them by matching their _Anchors_ to the master form's ones before extracting.
 
 For every form with a master image, **a user has to mark at least two **_**Anchors**_, with the longest distance possible between them. When they are further part, more of the form resides between them, which will improve extraction accuracy since the warping process becomes more consistent.&#x20;
 
@@ -50,7 +50,7 @@ An example image is shown below, where two parts on a Business Registration form
 
 ![](<../.gitbook/assets/Screenshot 2021-01-15 at 8.08.51 PM.png>)
 
-You may be wondering: which parts in the master form should I mark with an _Anchor_? Identify the **common parts** of your form, then include them with an _Anchor_. Bear in mind that parts which vary across different documents of the same form should** not **be anchors.
+You may be wondering: which parts in the master form should I mark with an _Anchor_? Identify the **common parts** of your form, then include them with an _Anchor_. Bear in mind that parts which vary across different documents of the same form should **not** be anchors.
 
 #### Adding some to the master image
 
@@ -62,15 +62,15 @@ Choose the second tool as shown in the image below to mark an _Anchor_.
 
 Then mark points where the last connects with the first to create an _Anchor_, as shown in the GIF below.&#x20;
 
-Note that only three _Anchors_ are marked here, while there exist other common parts that make good _Anchors _in a BR form, such as the field names "Name of Business/Corporation", "Business/Branch Name" and "Address". Don't confuse them with the field values though, as the field names don't change across BR forms while the values do.
+Note that only three _Anchors_ are marked here, while there exist other common parts that make good _Anchors_ in a BR form, such as the field names "Name of Business/Corporation", "Business/Branch Name" and "Address". Don't confuse them with the field values though, as the field names don't change across BR forms while the values do.
 
 ![](../.gitbook/assets/ezgif-7-aaa61b2b35b0.gif)
 
-The master form now has enough _Anchors _to warp properly.
+The master form now has enough _Anchors_ to warp properly.
 
 ### Detection Regions
 
-_Detection Regions _are the areas that are marked from which you need data extracted. One _Detection Region _can have several extraction fields, as one region can contain several items of data that are worth obtaining or extracting.
+_Detection Regions_ are the areas that are marked from which you need data extracted. One _Detection Region_ can have several extraction fields, as one region can contain several items of data that are worth obtaining or extracting.
 
 **TL;DR:** Mark the area where you want information extracted from on the master form with _Detection Region._
 
@@ -82,7 +82,7 @@ Choose the third tool marked with a red box in the screenshot below:
 
 ![](<../.gitbook/assets/Screenshot 2021-01-06 at 5.37.52 PM.png>)
 
-As shown below, we'll add three _Detection Regions, _each containing a field called "name of business", "branch name", and "expiry date".
+As shown below, we'll add three _Detection Regions,_ each containing a field called "name of business", "branch name", and "expiry date".
 
 ![](../.gitbook/assets/ezgif-7-036dabcfb491.gif)
 

@@ -6,7 +6,7 @@ description: >-
 
 # Detection Region
 
-A user can specify an area with _Detection Region_ when data is needed from that part of the _Form. _A _Detection Region _accepts multiple extraction fields, allowing you to extract several data items from an area.
+A user can specify an area with _Detection Region_ when data is needed from that part of the _Form._ A _Detection Region_ accepts multiple extraction fields, allowing you to extract several data items from an area.
 
 ![](<../../.gitbook/assets/Screenshot 2020-09-16 at 3.53.51 PM.png>)
 

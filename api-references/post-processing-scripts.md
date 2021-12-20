@@ -80,7 +80,7 @@ Returns the distance between two strings
 
 Parameters:
 
-* string1 (string)**: **First string that will be compared with the other
+* string1 (string)**:** First string that will be compared with the other
 * string2 (string): The other string
 
 Return Value:
