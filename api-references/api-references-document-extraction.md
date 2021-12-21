@@ -163,6 +163,12 @@ You can download the following file and import it to the [Postman](https://www.p
 Postman Collection
 {% endfile %}
 
+### Image Sizing Recommendations
+
+The images submitted to the extraction API should be of sufficient size so that the text and features can be easily distinguished.&#x20;
+
+The API supports JPEG, PDF, and PNG image types. It is recommended to use an image minimum of **1000x750 pixels or 100 DPI**.
+
 ## Making the Request
 
 If you want to upload the image directly, it can be uploaded in the request body or via multipart/form-data. If you want to specify an image URL, it can be submitted via a header or multipart/form-data.
