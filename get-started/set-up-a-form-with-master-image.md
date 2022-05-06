@@ -107,9 +107,9 @@ As shown below, we'll add three _Detection Regions,_ each containing a field cal
 
 Click the "Save" button. Now you've finished setting up this form!
 
-## Test it out with other BR forms
+## Step 3: Testing the extractor
 
-There are two more BR forms in the ZIP file you've downloaded at the start of this tutorial. They will be fed to our freshly created form to have the target data extracted.
+There are two more BR forms in the folder you've downloaded at the start of this tutorial. They will be fed to our freshly created form to have the target data extracted.
 
 Navigate to the "Test" tab and choose `br_2_mobile_taken`. This will trigger an extraction which will complete in no time. Repeat these steps with the other image and you will get similar results.
 
@@ -117,7 +117,7 @@ Navigate to the "Test" tab and choose `br_2_mobile_taken`. This will trigger an 
 
 As shown in the gif above, `br_2_mobile_taken` originally has a tilted angle but it's corrected and aligned once it's uploaded and warped. It was taken with a mobile phone with a not-so-perfect angle, still FormX manages to enhance such images "lesser" in quality and returns satisfactory results.&#x20;
 
-## Integrating FormX with any app
+## Step 4: Integrating FormX with any app
 
 By calling our APIs, extraction results can be obtained using any app. Navigate to the "API" tab, then copy both the form ID and your access token by clicking the buttons on the top right corner.&#x20;
 
