@@ -11,7 +11,7 @@
 
 ## Use cases
 
----
+***
 
 * [Official Forms or Certificates](official-documents-or-certificates.md)
 * [Receipts or Tickets](receipts-or-tickets.md)
@@ -27,13 +27,13 @@
   * [Anchor](features/labeller/anchor.md)
   * [Detection Region](features/labeller/detection-region.md)
 * [Post-Processing Scripts](features/post-processing-scripts.md)
+* [Import and Export Forms](features/import-and-export-forms.md)
 
 ## API References
 
 * [Document Extraction](api-references/api-references-document-extraction.md)
 * [Post-Processing Scripts](api-references/post-processing-scripts.md)
 
----
+***
 
 * [Contact Us](contact-us.md)
-
