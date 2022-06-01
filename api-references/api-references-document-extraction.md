@@ -157,7 +157,7 @@ echo $response;
 
 ### Postman Example
 
-You can download the following file and import it to the [Postman](https://www.postman.com) app to test the API. Remember to set the `X-WORKEN_TOKEN` and `X-WORKER-FORM-ID` variables in the collection scope to configure your form.
+You can download the following file and import it to the [Postman](https://www.postman.com/) app to test the API. Remember to set the `X-WORKEN_TOKEN` and `X-WORKER-FORM-ID` variables in the collection scope to configure your form.
 
 {% file src="../.gitbook/assets/FormX Document Extraction.postman_collection.json.zip" %}
 Postman Collection
@@ -298,3 +298,24 @@ The extraction result will be deleted 24 hours after the job is completed, no ma
    ]
 }
 ```
+
+## Troubleshooting
+
+### Error codes
+
+If an error occured, the endpoint returns an error response in the following structure.
+
+```
+{
+    "error": {
+        "code": ERROR_CODE,
+        "message": "ERROR_MESSAGE"
+    },
+    "status": "failed"
+}
+```
+
+Below is a table containing the possible errors and a short description of their cause.
+
+<table><thead><tr><th data-type="number">Code</th><th>Message</th><th data-hidden>Description</th><th data-hidden></th></tr></thead><tbody><tr><td>401</td><td>Unauthorized</td><td></td><td></td></tr><tr><td>1001</td><td>Invalid token or Invalid argument</td><td></td><td></td></tr><tr><td>1002</td><td>Form ID not found</td><td></td><td></td></tr><tr><td>1003</td><td>Unsafe image url</td><td></td><td></td></tr><tr><td>1004</td><td>Cannot load image</td><td></td><td></td></tr><tr><td>1005</td><td>Uploaded file is too large</td><td></td><td></td></tr><tr><td>1006</td><td>Free quota used up, please upgrade to a<br>paid plan to continue.</td><td></td><td></td></tr><tr><td>1007</td><td>Too many requests</td><td></td><td></td></tr><tr><td>1008</td><td>Usage reached hard limit</td><td></td><td></td></tr><tr><td>2001</td><td>Form not found</td><td></td><td></td></tr><tr><td>2002</td><td>Form not ready</td><td></td><td></td></tr><tr><td>2003</td><td>Query image is not match the specified form</td><td></td><td></td></tr><tr><td>2004</td><td>Error during extracting form info</td><td></td><td></td></tr><tr><td>2005</td><td>Form group not found</td><td></td><td></td></tr><tr><td>2006</td><td>Form group is empty</td><td></td><td></td></tr><tr><td>2007</td><td>Cannot recognize any text from the input image</td><td></td><td></td></tr><tr><td>3001</td><td>Receipt group ID not found</td><td></td><td></td></tr><tr><td>3002</td><td>Google Cloud Vision service account key is not set</td><td></td><td></td></tr><tr><td>3003</td><td>Error during extracting receipt info</td><td></td><td></td></tr><tr><td>3004</td><td>Error during accessing Google Vision API</td><td></td><td></td></tr><tr><td>3005</td><td>Azure computer vision subscription key and/or endpoint is not set</td><td></td><td></td></tr><tr><td>4001</td><td>Extract job not found</td><td></td><td></td></tr><tr><td>4002</td><td>Fail to submit extract job, please try again later</td><td></td><td></td></tr><tr><td>5001</td><td>Custom model ID not found</td><td></td><td></td></tr><tr><td>5002</td><td>Custom model not found</td><td></td><td></td></tr><tr><td>5003</td><td>Error during creating the sync cvat project task</td><td></td><td></td></tr><tr><td>6001</td><td>Endpoint is not available because Procrastinate is disabled</td><td></td><td></td></tr></tbody></table>
+
