@@ -16,7 +16,7 @@ Here is a video demo of how to create a fixed format extractor on the FormX Port
 
 ## Prerequisites
 
-* An account on FormX [portal](https://formextractor.oursky.com)
+* An account on FormX [portal](https://formextractor.oursky.com/)
 * A high quality scan of a specimen of the document you wish to extract. In the tutorial, a sample [Business Registration (BR) Forms](https://drive.google.com/drive/folders/12hSnSbN2JyY\_iwi3XAhBiMxpp1wCvHib?usp=sharing) will be used
 
 ## Objective

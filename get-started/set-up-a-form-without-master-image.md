@@ -8,7 +8,7 @@ description: >-
 
 ## Prerequisites
 
-* An account on FormX [portal](https://formextractor.oursky.com)
+* An account on FormX [portal](https://formextractor.oursky.com/)
 * An understanding  of FormX's [basics](../background.md)
 * Downloaded [samples](https://drive.google.com/drive/folders/15ozbfqMwXjjDd9J-YfFZH2DbVB2euQz3?usp=sharing) that will be used in this tutorial
 
