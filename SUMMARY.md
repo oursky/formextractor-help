@@ -35,6 +35,7 @@
 
 * [Document Extraction](api-references/api-references-document-extraction.md)
 * [Post-Processing Scripts](api-references/post-processing-scripts.md)
+* [Detect documents from an image](api-references/detect-documents-from-an-image.md)
 
 ***
 
