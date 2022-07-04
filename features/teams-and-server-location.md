@@ -11,7 +11,7 @@ description: >-
 1. In the team selection dropdown, select "**New Team**"
 2. Enter the team's name and server location
 
-Server location specifies where your data is stored and processed. It cannot be changed once set. The current available locations are Taiwan and Singapore.
+Server location specifies where your data is stored and processed. It cannot be changed once set. The current available locations are **Taiwan** and **Singapore**.
 
 ![Create a new team account](../.gitbook/assets/Create-New-Team.png)
 
