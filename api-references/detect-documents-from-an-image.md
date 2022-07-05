@@ -33,7 +33,7 @@ The simplest way is to send the image content in the body as raw binary data or 
 | Content-Type      | `image/jpeg` or `image/png` or `application/pdf`                                                                         | required  |
 | X-WORKER-TOKEN    | Access token                                                                                                             | required  |
 | X-WORKER-ENCODING | <p>Encoding of the request body, allowed <code>raw</code> or <code>base64</code> <br>Default value: <code>raw</code></p> | optional  |
-| X-WORKER-PDF-DPI  | <p>DPI of the uploaded pdf file.<br>Default value: <code>100</code></p>                                                  | optional  |
+| X-WORKER-PDF-DPI  | <p>DPI of the uploaded pdf file.<br>Default value: <code>150</code></p>                                                  | optional  |
 
 ### Option 2: Send image over form-data
 
@@ -51,7 +51,7 @@ You can also send the image file in multipart/form-data.
 | Name     | Description                                                              | Required? |
 | -------- | ------------------------------------------------------------------------ | --------- |
 | image    | Image to detect documents in jpg or png format, or a pdf file.           | required  |
-| pdf\_dpi | <p>DPI of the uploaded pdf file. <br>Default value: <code>100</code></p> | optional  |
+| pdf\_dpi | <p>DPI of the uploaded pdf file. <br>Default value: <code>150</code></p> | optional  |
 
 ### Option 3: Send image by URL
 
@@ -63,14 +63,14 @@ Instead of attaching the image file in the request, you can also specify the URL
 | ------------------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | X-WORKER-TOKEN     | Access token                                                                | required                                                                   |
 | X-WORKER-IMAGE-URL | URL of the image to be processed in jpg or png format, or URL of a pdf file | Specify the URL here or in form-data                                       |
-| X-WORKER-PDF-DPI   | <p>DPI of the uploaded pdf file. <br>Default value: <code>100</code></p>    | Optional, only applicable if the URL in `X-WORKER-IMAGE-URL` is a pdf file |
+| X-WORKER-PDF-DPI   | <p>DPI of the uploaded pdf file. <br>Default value: <code>150</code></p>    | Optional, only applicable if the URL in `X-WORKER-IMAGE-URL` is a pdf file |
 
 #### Parameters in Body form-data
 
 | Name       | Description                                                                 | Required?                                                         |
 | ---------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | image\_url | URL of the image to be processed in jpg or png format, or URL of a pdf file | Specify the URL here or in the Header                             |
-| pdf\_dpi   | <p>DPI of the uploaded pdf file. <br>Default value: <code>100</code></p>    | Optional, only applicable if the URL in `image_url` is a pdf file |
+| pdf\_dpi   | <p>DPI of the uploaded pdf file. <br>Default value: <code>150</code></p>    | Optional, only applicable if the URL in `image_url` is a pdf file |
 
 ### Response
 
