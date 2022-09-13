@@ -6,9 +6,9 @@
 
 ## Overview
 
-Send the image with a `POST` request to the Extract API endpoint and FormX will isolate extraction fields from the uploaded image then perform OCR on these fields.&#x20;
+Send the image with a `POST` request to the Extract API endpoint and FormX will recognize the information from the document.&#x20;
 
-FormX will use the form model of your choice to extract and return the data in a JSON format. The form model can be specified by the `form_id` parameter. An Access Token should also be included. They can be obtained from the web portal dashboard.
+FormX will use the extractor of your choice to extract and return the data in a JSON format. The extractor can be specified by the `form_id` parameter. An Access Token should also be included. They can be obtained from the web portal dashboard.
 
 FormX provides two modes to access the API, synchronous or asynchronous, which can be specified by a parameter. [See more details below](api-references-document-extraction.md#using-the-asynchronous-mode).
 
