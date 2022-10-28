@@ -175,31 +175,68 @@ If you want to upload the image directly, it can be uploaded in the request body
 
 Most of the parameters can be submitted either as multipart/form-data or as request headers.
 
-#### Using parameters in HTTP request headers
+### Option 1: Send image over body
 
-| Name                            | Optional   | Description                                                                                                                                                    |
-| ------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Content-Type                    | _optional_ | <p><code>image/jpeg</code> or <code>image/png</code> or <code>application/pdf</code></p><p>*<strong>required</strong> if image is sent in the request body</p> |
-| X-WORKER-TOKEN                  | _required_ | <p>Access token</p><p>This parameter must be included in the header.</p>                                                                                       |
-| X-WORKER-FORM-ID                | _required_ | Form ID                                                                                                                                                        |
-| X-WORKER-IMAGE-URL              | _optional_ | <p>URL of the image, can be a JPG, PNG or PDF file<br>*<strong>required</strong> if request body is empty</p>                                                  |
-| X-WORKER-ENCODING               | _optional_ | <p>Encoding of the request body, allowed 'raw' or 'base64'</p><p>Default value: <code>raw</code></p>                                                           |
-| X-WORKER-PDF-DPI                | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                      |
-| X-WORKER-SHOW-CONFIDENCE        | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                   |
-| X-WORKER-AUTO-ADJUST-IMAGE-SIZE | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p> |
-| X-WORKER-ASYNC                  | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                            |
+The simplest way is to send the image content in the body as raw binary data or base64, and send the parameters in the header
 
-#### Using parameters in form data
+#### Parameters in HTTP request headers
 
-| Name                      | Optional   | Description                                                                                                                                                    |
-| ------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| form\_id                  | _required_ | Form ID                                                                                                                                                        |
-| image                     | _optional_ | <p>The image file, can be a JPG, PNG or PDF file</p><p>Either specify this or provide the image_url parameter</p>                                              |
-| image\_url                | _optional_ | <p>URL of the image, can be a JPG, PNG or PDF file</p><p>Either specify this or provide the image parameter</p>                                                |
-| pdf\_dpi                  | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                      |
-| show\_confidence          | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                   |
-| auto\_adjust\_image\_size | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p> |
-| async                     | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                            |
+| Header                          | Optional   | Description                                                                                                                                                                                         |
+| ------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Content-Type                    | _optional_ | <p><code>image/jpeg</code> or <code>image/png</code> or <code>application/pdf</code></p><p>*<strong>required</strong> if image is sent in the request body</p>                                      |
+| X-WORKER-TOKEN                  | _required_ | <p>Access token</p><p>This parameter must be included in the header.</p>                                                                                                                            |
+| X-WORKER-FORM-ID                | _required_ | Form ID                                                                                                                                                                                             |
+| X-WORKER-ENCODING               | _optional_ | <p>Encoding of the request body, allowed 'raw' or 'base64'</p><p>Default value: <code>raw</code></p>                                                                                                |
+| X-WORKER-PDF-DPI                | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                           |
+| X-WORKER-SHOW-CONFIDENCE        | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                        |
+| X-WORKER-AUTO-ADJUST-IMAGE-SIZE | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                      |
+| X-WORKER-MULTI-PAGE-PDF         | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                             |
+| X-WORKER-DETECT-MULTI-DOCUMENT  | _optional_ | <p>Flag for detecting multiple documents in an image. Turn this on if more than one documents are in the images. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
+| X-WORKER-ASYNC                  | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                                 |
+
+### Option 2: Send image over form-data
+
+If you send the image file in multipart/form-data, you should put the parameters in the form-data too. Only the access token is transferred in header.
+
+#### Parameters in Header
+
+| Header         | Optional?  | Description           |
+| -------------- | ---------- | --------------------- |
+| Content-Type   | _required_ | `multipart/form-data` |
+| X-WORKER-TOKEN | _required_ | Access token          |
+
+#### Parameters in form data
+
+| Name                      | Optional   | Description                                                                                                                                                                                         |
+| ------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| form\_id                  | _required_ | Form ID                                                                                                                                                                                             |
+| image                     | _optional_ | <p>The image file, can be a JPG, PNG or PDF file</p><p>Either specify this or provide the image_url parameter</p>                                                                                   |
+| pdf\_dpi                  | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                           |
+| show\_confidence          | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                        |
+| auto\_adjust\_image\_size | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                      |
+| multi\_page\_pdf          | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                             |
+| detect\_multi\_document   | _optional_ | <p>Flag for detecting multiple documents in an image. Turn this on if more than one documents are in the images. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
+| async                     | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                                 |
+
+### Option 3: Send image by URL
+
+Instead of attaching the image file in the request, you can also specify the URL to the image. Either send it in the header or in the body as multipart/form-data.
+
+#### Image URL in Header
+
+| Header             | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| X-WORKER-IMAGE-URL | URL of the image to be processed in jpg or png format, or URL of a pdf file |
+
+If the image URL is sent in the Header, other parameters should be sent in the Header too. Please refer to[ ](api-references-document-extraction.md#python)[Option 1](api-references-document-extraction.md#option-1-send-image-over-body) for the parameter descriptions.
+
+#### Image URL in from-data
+
+| Name       | Description                                                                 |
+| ---------- | --------------------------------------------------------------------------- |
+| image\_url | URL of the image to be processed in jpg or png format, or URL of a pdf file |
+
+If the image URL is sent in the form-data, other parameters should be sent in the form-data too. Please refer to [Option 2](api-references-document-extraction.md#option-2-send-image-over-form-data) for the parameter descriptions.
 
 ## API Response
 
