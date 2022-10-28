@@ -181,18 +181,18 @@ The simplest way is to send the image content in the body as raw binary data or 
 
 #### Parameters in HTTP request headers
 
-| Header                          | Optional   | Description                                                                                                                                                                                         |
-| ------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Content-Type                    | _optional_ | <p><code>image/jpeg</code> or <code>image/png</code> or <code>application/pdf</code></p><p>*<strong>required</strong> if image is sent in the request body</p>                                      |
-| X-WORKER-TOKEN                  | _required_ | <p>Access token</p><p>This parameter must be included in the header.</p>                                                                                                                            |
-| X-WORKER-FORM-ID                | _required_ | Form ID                                                                                                                                                                                             |
-| X-WORKER-ENCODING               | _optional_ | <p>Encoding of the request body, allowed 'raw' or 'base64'</p><p>Default value: <code>raw</code></p>                                                                                                |
-| X-WORKER-PDF-DPI                | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                           |
-| X-WORKER-SHOW-CONFIDENCE        | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                        |
-| X-WORKER-AUTO-ADJUST-IMAGE-SIZE | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                      |
-| X-WORKER-MULTI-PAGE-PDF         | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                             |
-| X-WORKER-DETECT-MULTI-DOCUMENT  | _optional_ | <p>Flag for detecting multiple documents in an image. Turn this on if more than one documents are in the images. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
-| X-WORKER-ASYNC                  | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                                 |
+| Header                          | Optional   | Description                                                                                                                                                                                      |
+| ------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Content-Type                    | _optional_ | <p><code>image/jpeg</code> or <code>image/png</code> or <code>application/pdf</code></p><p>*<strong>required</strong> if image is sent in the request body</p>                                   |
+| X-WORKER-TOKEN                  | _required_ | <p>Access token</p><p>This parameter must be included in the header.</p>                                                                                                                         |
+| X-WORKER-FORM-ID                | _required_ | Form ID                                                                                                                                                                                          |
+| X-WORKER-ENCODING               | _optional_ | <p>Encoding of the request body, allowed 'raw' or 'base64'</p><p>Default value: <code>raw</code></p>                                                                                             |
+| X-WORKER-PDF-DPI                | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                        |
+| X-WORKER-SHOW-CONFIDENCE        | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                     |
+| X-WORKER-AUTO-ADJUST-IMAGE-SIZE | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                   |
+| X-WORKER-MULTI-PAGE-PDF         | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                          |
+| X-WORKER-DETECT-MULTI-DOCUMENT  | _optional_ | <p>Flag for detecting multiple documents in a page. Turn this on if more than one documents are in each page. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
+| X-WORKER-ASYNC                  | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                              |
 
 ### Option 2: Send image over form-data
 
@@ -207,16 +207,16 @@ If you send the image file in multipart/form-data, you should put the parameters
 
 #### Parameters in form data
 
-| Name                      | Optional   | Description                                                                                                                                                                                         |
-| ------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| form\_id                  | _required_ | Form ID                                                                                                                                                                                             |
-| image                     | _optional_ | <p>The image file, can be a JPG, PNG or PDF file</p><p>Either specify this or provide the image_url parameter</p>                                                                                   |
-| pdf\_dpi                  | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                           |
-| show\_confidence          | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                        |
-| auto\_adjust\_image\_size | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                      |
-| multi\_page\_pdf          | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                             |
-| detect\_multi\_document   | _optional_ | <p>Flag for detecting multiple documents in an image. Turn this on if more than one documents are in the images. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
-| async                     | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                                 |
+| Name                      | Optional   | Description                                                                                                                                                                                      |
+| ------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| form\_id                  | _required_ | Form ID                                                                                                                                                                                          |
+| image                     | _optional_ | <p>The image file, can be a JPG, PNG or PDF file</p><p>Either specify this or provide the image_url parameter</p>                                                                                |
+| pdf\_dpi                  | _optional_ | <p>DPI of the uploaded pdf file</p><p>Default value: <code>100</code></p>                                                                                                                        |
+| show\_confidence          | _optional_ | <p>Flag for showing confidence score in response</p><p>Default value: <code>false</code></p>                                                                                                     |
+| auto\_adjust\_image\_size | _optional_ | <p>Flag for auto adjusting image size for better extraction result, it will take a longer for extraction if enabled</p><p>Default value: <code>true</code></p>                                   |
+| multi\_page\_pdf          | _optional_ | <p>Flag for processing a multi-page PDF document. If disabled, only the first page of the PDF is extracted.</p><p>Default value: <code>false</code></p>                                          |
+| detect\_multi\_document   | _optional_ | <p>Flag for detecting multiple documents in a page. Turn this on if more than one documents are in each page. For example, 3 identity cards in a scan. <br>Default value: <code>false</code></p> |
+| async                     | _optional_ | <p>Flag for using the asynchronous mode</p><p>Default value: <code>false</code></p>                                                                                                              |
 
 ### Option 3: Send image by URL
 
