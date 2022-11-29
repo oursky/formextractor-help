@@ -8,7 +8,7 @@ After you upload the documents to FormX for extraction, FormX can send the resul
 
 ### How to set it up
 
-1. Go to **Integrations > Webhooks** in the portal
+1. Go to **Webhooks** in the portal
 2. Click "**Add new webhook**".
 3. Fill in a name for your reference. e.g. "My Webhook"
 4. Enter the URL of your endpoint
@@ -17,6 +17,16 @@ After you upload the documents to FormX for extraction, FormX can send the resul
 7. Click "**Save**"
 
 Now every time the form or the form group you choose has completed an extraction job, we will send a message with the extracted data to the URL endpoint.&#x20;
+
+### Custom Headers
+
+You may want to include custom headers to the webhook delivery to provide additional information.&#x20;
+
+You can configure custom headers when editing the webhook integration.&#x20;
+
+![](../.gitbook/assets/image.png)
+
+Enter the header name and value you want to include in the webhook delivery. Maximum 5 custom headers can be added for each webhook integration.
 
 ### Webhook delivery and Retries
 
